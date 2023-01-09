@@ -4,11 +4,14 @@
 <head>
    <meta charset="UTF-8">
    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-   })(window,document,'script','dataLayer','GTM-WRTLW3X');</script>
+   <script>(function (w, d, s, l, i) {
+         w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+               new Date().getTime(), event: 'gtm.js'
+         }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+               'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-WRTLW3X');</script>
    <!-- End Google Tag Manager -->
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +27,9 @@
 
       body {
          background-color: #ffce50;
-         font-family: Arial, Helvetica, sans-serif;
+         font-family: Arial,"微軟正黑體", Helvetica, sans-serif;
+         font-size: 20px;
+         line-height: 1.5;
       }
 
       * {
@@ -46,7 +51,8 @@
          z-index: 1;
          overflow: hidden;
       }
-      .cover{
+
+      .cover {
          width: 100%;
          height: 80%;
          position: absolute;
@@ -64,7 +70,7 @@
          bottom: 0;
       }
 
-      img {
+      header img {
          height: 90%;
          position: absolute;
          left: 10vw;
@@ -78,16 +84,21 @@
          left: 10vw;
          bottom: -15px;
       }
-      .title{
+
+      #title {
          z-index: 3;
-      }
-      h1 {
          position: absolute;
-         right: 15vw;
-         top: 15vw;
+         right: 0;
+         top: 0%;
+         width: 50%;
+         height: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      h1 {
          font-size: 5em;
-         margin: 1em;
-         max-width:40%;
       }
 
       h2 {
@@ -96,17 +107,19 @@
          margin-bottom: 0.5em;
          line-height: 10vw;
       }
-      .t2022{
+
+      .t2022 {
          position: absolute;
+         color: gray;
          right: 0;
          top: 0;
          font-size: 10em;
-         margin: 0 1em 0 0;
-         max-width:40%;
          z-index: 5;
          --animate-delay: 2s;
-         font-family:monospace;
+         font-family: monospace;
+         opacity: 0.6;
       }
+
       aside {
          left: 0;
          position: absolute;
@@ -125,18 +138,49 @@
          transform: translate(-50%, -50%);
       }
 
-      .hidden {
-         visibility: hidden;
+      header::after {
+         content: '';
+         position: absolute;
+         width: 0;
+         height: 0;
+         border-style: solid;
+         border-width: 50px 50px 0 50px;
+         border-color: #FFF transparent transparent transparent;
+         bottom: -25px;
+         left: 50%;
+         transform: translate(-50%, 50%);
+         z-index: 10;
       }
+
 
       main {
          width: 100%;
          height: 100vh;
          background-color: #ffce50;
          overflow: hidden;
-         display: flex;
          position: relative;
          z-index: 5;
+         padding-top: 50px;
+      }
+
+      .wrapper {
+         width: 50%;
+         text-align: center;
+      }
+
+      #about img{
+         max-width: 300px;
+         max-height: 296px;
+      }
+
+      section {
+         width: 1200px;
+         max-width: 94%;
+         margin: 0 auto;
+      }
+      #about{
+         justify-items: center;
+         display: flex;
       }
 
       @media (max-aspect-ratio: 1/1) {
@@ -144,41 +188,57 @@
             width: 70vw;
             height: auto;
          }
+
          h2 {
-         font-size: 8vw;
-      }
-      h1{
-         
-         left: 10vw;
-         top: 0;
-         max-width: max-content;
-      }
+            font-size: 8vw;
+         }
+
+         h1 {
+
+            left: 10vw;
+            top: 0;
+            max-width: max-content;
+         }
       }
    </style>
 </head>
 
 <body>
    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRTLW3X"
-   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRTLW3X" height="0" width="0"
+         style="display:none;visibility:hidden"></iframe></noscript>
    <!-- End Google Tag Manager (noscript) -->
    <header>
       <div class="cover"></div>
       <aside>
          <h2 class="animate__animated animate__slideInUp">Furry Art in Taiwan</h2>
       </aside>
-      <div class="title">
-      <h1 class="animate__animated animate__zoomIn">這是一個大標題</h1></div>
+      <div id="title">
+         <h1 class="animate__animated animate__zoomIn">這是一個大標題</h1>
+      </div>
       <div class="t2022 animate__animated animate__fadeIn">2022</div>
-         <div class=>
-            <img class="animate__animated animate__rotateInUpRight" src=LeopardCat.webp />
-         </div>
-         <div class="lc animate__animated animate__rotateInUpRight">
-            a
-            <img id=tail class="animate__animated animate__wobble animate__infinite" src=LeopardCat-tail.webp />
-         </div>
+      <div class=>
+         <img class="animate__animated animate__rotateInUpRight" src=LeopardCat.webp />
+      </div>
+      <div class="lc animate__animated animate__rotateInUpRight">
+         a
+         <img id=tail class="animate__animated animate__wobble animate__infinite" src=LeopardCat-tail.webp />
+      </div>
    </header>
-   <main>Hi</main>
+   <main>
+      <section id="idea">
+         <h3>
+            計畫目的
+         </h3>
+         <p>伏爾泰曾經說過一句發人深省的話，不經巨大的困難，不會有偉大的事業。這不禁令我深思。為什麼內文要寫甚麼對我們來說這麼重要？吉姆·羅恩告訴我們，要麽你主宰生活，要麽你被生活主宰。帶著這句話，我們還要更加慎重的審視這個問題：我這幾天一直在思索這個問題，所謂內文要寫甚麼，關鍵是內文要寫甚麼需要如何寫。</p>
+      </section>
+      <section id="about">
+         <div class="wrapper"><img src="read.jpg" alt="read"></div>
+         <div class="wrapper">
+            <p>伏爾泰曾經說過一句發人深省的話，不經巨大的困難，不會有偉大的事業。這不禁令我深思。為什麼內文要寫甚麼對我們來說這麼重要？吉姆·羅恩告訴我們，要麽你主宰生活，要麽你被生活主宰。帶著這句話，我們還要更加慎重的審視這個問題：我這幾天一直在思索這個問題，所謂內文要寫甚麼，關鍵是內文要寫甚麼需要如何寫。</p>
+         </div>
+      </section>
+   </main>
 </body>
 
 </html>
