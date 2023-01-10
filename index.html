@@ -19,6 +19,9 @@
    <meta name="description" content="邀請100位不同畫風的台灣獸人繪師參與此活動">
    <link rel="stylesheet" href="animate.min.css" />
    <script src="wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
    <style>
       *,
       *::before,
@@ -169,7 +172,7 @@
          overflow: hidden;
          position: relative;
          z-index: 5;
-         padding-top: 20px;
+         background-color:white;
       }
 
       .wrapper {
@@ -177,7 +180,7 @@
          text-align: center;
       }
 
-      .whiteSection img {
+      section img {
          max-width: 300px;
          max-height: 296px;
       }
@@ -187,27 +190,24 @@
          max-width: 94%;
          margin: 0 auto;
          padding: 2em 0;
-      }
-
-      .whiteSection section {
          justify-items: center;
          display: flex;
       }
 
       #idea {
+         padding-top: 20px;
          text-align: center;
+         display:block;
+         background-color:#ffce50;
+         box-shadow: 0 0 0 100vmax #ffce50;
+         clip-path: inset(0 -100vmax);
       }
 
       h3 {
          font-size: 1.5em;
          font-weight: 500;
       }
-
-      .whiteSection {
-         width: 100%;
-         background-color: #FFF;
-      }
-
+      
       #work p,ul {
          text-align: left;
       }
@@ -244,7 +244,7 @@
          <h2 class="animate__animated animate__slideInUp">Furry Art in Taiwan</h2>
       </aside>
       <div id="title">
-         <h1 class="animate__animated animate__zoomIn">這是一個大標題</h1>
+         <h1 class="animate__animated animate__zoomIn">台灣獸人繪師作品集</h1>
       </div>
       <div class="t2022 animate__animated animate__fadeIn">2022</div>
       <div class=>
@@ -256,14 +256,14 @@
       </div>
    </header>
    <main>
-      <section id="idea">
+      <section id="idea" class="wow animate__animated animate__fadeIn">
          <h3>
             計畫目的
          </h3>
-         <p>伏爾泰曾經說過一句發人深省的話，不經巨大的困難，不會有偉大的事業。這不禁令我深思。為什麼內文要寫甚麼對我們來說這麼重要？吉姆·羅恩告訴我們，要麽你主宰生活，要麽你被生活主宰。帶著這句話，我們還要更加慎重的審視這個問題：我這幾天一直在思索這個問題，所謂內文要寫甚麼，關鍵是內文要寫甚麼需要如何寫。
+         <p>作品集的目標是為了讓各個繪師能有被大眾看到的機會，以及推廣台灣獸圈的各個出色繪師，此作品集所有收益扣除印刷費、繪師稿費以及其他必要費用將全數捐出給予［台灣石虎保護協會Leopard cat Association of Taiwan］
          </p>
       </section>
-      <div class="whiteSection">
+      <div class="whiteSection wow animate__animated animate__fadeIn">
          <section id="about">
             <div class="wrapper"><img src="read.jpg" alt="read"></div>
             <div class="wrapper">
@@ -275,7 +275,7 @@
             </div>
          </section>
       </div>
-      <div class="whiteSection">
+      <div class="whiteSection wow animate__animated animate__fadeIn">
          <section id="risk">
             <div class="wrapper">
                <h3>
@@ -287,7 +287,7 @@
             <div class="wrapper"><img src="draw.jpg" alt="read"></div>
          </section>
       </div>
-      <div class="whiteSection">
+      <div class="whiteSection wow animate__animated animate__fadeIn">
          <section id="work">
             <div class="wrapper"><img src="point.jpg" alt="read"></div>
             <div class="wrapper">
