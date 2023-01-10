@@ -18,6 +18,7 @@
    <title>台灣獸人繪師作品集</title>
    <meta name="description" content="邀請100位不同畫風的台灣獸人繪師參與此活動">
    <link rel="stylesheet" href="animate.min.css" />
+   <script src="wow.min.js"></script>
    <style>
       *,
       *::before,
@@ -27,7 +28,7 @@
 
       body {
          background-color: #ffce50;
-         font-family: Arial,"微軟正黑體", Helvetica, sans-serif;
+         font-family: Arial, "微軟正黑體", Helvetica, sans-serif;
          font-size: 20px;
          line-height: 1.5;
       }
@@ -44,9 +45,9 @@
 
       header {
          width: 100%;
-         height: 100vh;
+         height: calc(100vh + 50px);
          background-color: white;
-         position: reletive;
+         position: relative;
          display: flex;
          z-index: 1;
          overflow: hidden;
@@ -63,18 +64,18 @@
       }
 
       .lc {
-         height: 100%;
-         width: 50vw;
+         height: 100vh;
+         width: 100%;
          position: absolute;
          left: 0;
          bottom: 0;
       }
 
       header img {
-         height: 90%;
+         height: 90vh;
          position: absolute;
          left: 10vw;
-         bottom: 0;
+         bottom: 50px;
          z-index: 4;
       }
 
@@ -82,7 +83,7 @@
          --animate-duration: 5s;
          position: absolute;
          left: 10vw;
-         bottom: -15px;
+         bottom: 35px;
       }
 
       #title {
@@ -98,17 +99,18 @@
       }
 
       h1 {
-         font-size: 5em;
+         font-size: 3em;
       }
 
       h2 {
-         font-size: 5em;
+         font-size: 3em;
          text-align: right;
          margin-bottom: 0.5em;
          line-height: 10vw;
       }
 
       .t2022 {
+         line-height: 1;
          position: absolute;
          color: gray;
          right: 0;
@@ -125,7 +127,7 @@
          position: absolute;
          writing-mode: vertical-rl;
          text-orientation: mixed;
-         height: 100%;
+         height: 100vh;
          background-color: #ffce50;
          width: 10vw;
          z-index: 5;
@@ -138,29 +140,36 @@
          transform: translate(-50%, -50%);
       }
 
+      header::before {
+         content: '';
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         height: 0;
+         width: 50%;
+         border-bottom: 50px solid #ffce50;
+         border-right: 37px solid transparent;
+         z-index: 10
+      }
+
       header::after {
          content: '';
          position: absolute;
-         width: 0;
+         bottom: 0;
+         right: 0;
          height: 0;
-         border-style: solid;
-         border-width: 50px 50px 0 50px;
-         border-color: #FFF transparent transparent transparent;
-         bottom: -25px;
-         left: 50%;
-         transform: translate(-50%, 50%);
-         z-index: 10;
+         width: 50%;
+         border-bottom: 50px solid #ffce50;
+         border-left: 37px solid transparent;
+         z-index: 10
       }
-
 
       main {
          width: 100%;
-         height: 100vh;
-         background-color: #ffce50;
          overflow: hidden;
          position: relative;
          z-index: 5;
-         padding-top: 50px;
+         padding-top: 20px;
       }
 
       .wrapper {
@@ -168,7 +177,7 @@
          text-align: center;
       }
 
-      #about img{
+      .whiteSection img {
          max-width: 300px;
          max-height: 296px;
       }
@@ -177,16 +186,36 @@
          width: 1200px;
          max-width: 94%;
          margin: 0 auto;
+         padding: 2em 0;
       }
-      #about{
+
+      .whiteSection section {
          justify-items: center;
          display: flex;
       }
 
+      #idea {
+         text-align: center;
+      }
+
+      h3 {
+         font-size: 1.5em;
+         font-weight: 500;
+      }
+
+      .whiteSection {
+         width: 100%;
+         background-color: #FFF;
+      }
+
+      #work p,ul {
+         text-align: left;
+      }
+
       @media (max-aspect-ratio: 1/1) {
          img {
-            width: 70vw;
-            height: auto;
+            width: 90vw;
+            height: auto !important;
          }
 
          h2 {
@@ -199,6 +228,7 @@
             top: 0;
             max-width: max-content;
          }
+
       }
    </style>
 </head>
@@ -211,18 +241,18 @@
    <header>
       <div class="cover"></div>
       <aside>
-         <h2 class="animate__animated animate__slideInUp">Furry Art in Taiwan</h2>
+         <h2 class="wow slideInUp">Furry Art in Taiwan</h2>
       </aside>
       <div id="title">
-         <h1 class="animate__animated animate__zoomIn">這是一個大標題</h1>
+         <h1 class="wow zoomIn">這是一個大標題</h1>
       </div>
-      <div class="t2022 animate__animated animate__fadeIn">2022</div>
+      <div class="t2022 wow fadeIn">2022</div>
       <div class=>
-         <img class="animate__animated animate__rotateInUpRight" src=LeopardCat.webp />
+         <img class="wow rotateInUpRight" src=LeopardCat.webp />
       </div>
-      <div class="lc animate__animated animate__rotateInUpRight">
+      <div class="lc wow rotateInUpRight">
          a
-         <img id=tail class="animate__animated animate__wobble animate__infinite" src=LeopardCat-tail.webp />
+         <img id=tail class="wow wobble infinite" src=LeopardCat-tail.webp />
       </div>
    </header>
    <main>
@@ -230,15 +260,60 @@
          <h3>
             計畫目的
          </h3>
-         <p>伏爾泰曾經說過一句發人深省的話，不經巨大的困難，不會有偉大的事業。這不禁令我深思。為什麼內文要寫甚麼對我們來說這麼重要？吉姆·羅恩告訴我們，要麽你主宰生活，要麽你被生活主宰。帶著這句話，我們還要更加慎重的審視這個問題：我這幾天一直在思索這個問題，所謂內文要寫甚麼，關鍵是內文要寫甚麼需要如何寫。</p>
+         <p>伏爾泰曾經說過一句發人深省的話，不經巨大的困難，不會有偉大的事業。這不禁令我深思。為什麼內文要寫甚麼對我們來說這麼重要？吉姆·羅恩告訴我們，要麽你主宰生活，要麽你被生活主宰。帶著這句話，我們還要更加慎重的審視這個問題：我這幾天一直在思索這個問題，所謂內文要寫甚麼，關鍵是內文要寫甚麼需要如何寫。
+         </p>
       </section>
-      <section id="about">
-         <div class="wrapper"><img src="read.jpg" alt="read"></div>
-         <div class="wrapper">
-            <p>伏爾泰曾經說過一句發人深省的話，不經巨大的困難，不會有偉大的事業。這不禁令我深思。為什麼內文要寫甚麼對我們來說這麼重要？吉姆·羅恩告訴我們，要麽你主宰生活，要麽你被生活主宰。帶著這句話，我們還要更加慎重的審視這個問題：我這幾天一直在思索這個問題，所謂內文要寫甚麼，關鍵是內文要寫甚麼需要如何寫。</p>
-         </div>
-      </section>
+      <div class="whiteSection">
+         <section id="about">
+            <div class="wrapper"><img src="read.jpg" alt="read"></div>
+            <div class="wrapper">
+               <h3>
+                  活動參加辦法
+               </h3>
+               <p>繪師需提供使用的頭像、繪師名稱、社群網站網址或暱稱、需要使用的圖（最少四張最多七張）、及給讀者的話內容。將由團隊成員整理作品集版面後給予繪師過目。宣傳方式以網路廣告為主，將於作品集排版全部完成後會在此建立電子版作品集並以Facebook公開宣傳。
+                  宣傳內容為：部分繪師作品集圖透、參與繪師名單、印調、自由樂捐連結、額外樂捐贈禮禮品。</p>
+            </div>
+         </section>
+      </div>
+      <div class="whiteSection">
+         <section id="risk">
+            <div class="wrapper">
+               <h3>
+                  風險評估以及避險措施
+               </h3>
+               <p>
+                  預計遇到的問題 - 作品集製作資金不足，將會把作品集紙質更換，壓低作品集的質量。繪師的稿費減少，或是後續補上。（待增）若資金不足，作品集預購日期將會延後。</p>
+            </div>
+            <div class="wrapper"><img src="draw.jpg" alt="read"></div>
+         </section>
+      </div>
+      <div class="whiteSection">
+         <section id="work">
+            <div class="wrapper"><img src="point.jpg" alt="read"></div>
+            <div class="wrapper">
+               <h3>
+                  目前職位(歡迎你的加入!)
+               </h3>
+               <p>
+                  招收共同編輯作者、協作者、合作者等，如果有意願的人歡迎底下留言並說明你想要的職位，過審將會拉進DC。</p>
+               <ul>
+                  <li>編輯：薩波、小猦、澍星</li>
+                  <li>印務：澍星</li>
+                  <li>財務：</li>
+                  <li>監工：</li>
+                  <li>合作周邊商品者：伊秋</li>
+               </ul>
+               <p>若有其他可以幫忙的也可以留言，團隊會視情況來招收。</p>
+            </div>
+         </section>
+      </div>
    </main>
+   <footer>
+
+   </footer>
+   <script>
+      new WOW().init();
+      </script>
 </body>
 
 </html>
