@@ -19,9 +19,9 @@
    <meta name="description" content="邀請100位不同畫風的台灣獸人繪師參與此活動">
    <link rel="stylesheet" href="animate.min.css" />
    <script src="wow.min.js"></script>
-              <script>
-              new WOW().init();
-              </script>
+   <script>
+      new WOW().init();
+   </script>
    <style>
       *,
       *::before,
@@ -94,7 +94,7 @@
          position: absolute;
          right: 0;
          top: 0%;
-         width: 50%;
+         width: 45%;
          height: 100%;
          display: flex;
          justify-content: center;
@@ -103,6 +103,10 @@
 
       h1 {
          font-size: 3em;
+         max-width: 40vw;
+         word-wrap: break-word;
+         word-break: break-all;
+         hyphens: auto;
       }
 
       h2 {
@@ -115,7 +119,7 @@
       .t2022 {
          line-height: 1;
          position: absolute;
-         color: gray;
+         color: rgb(181, 181, 181, .3);
          right: 0;
          top: 0;
          font-size: 10em;
@@ -172,7 +176,7 @@
          overflow: hidden;
          position: relative;
          z-index: 5;
-         background-color:white;
+         background-color: white;
       }
 
       .wrapper {
@@ -197,8 +201,8 @@
       #idea {
          padding-top: 20px;
          text-align: center;
-         display:block;
-         background-color:#ffce50;
+         display: block;
+         background-color: #ffce50;
          box-shadow: 0 0 0 100vmax #ffce50;
          clip-path: inset(0 -100vmax);
       }
@@ -207,28 +211,43 @@
          font-size: 1.5em;
          font-weight: 500;
       }
-      
-      #work p,ul {
+
+      #work p,
+      ul {
          text-align: left;
+      }
+      footer{
+         text-align: center;
+         padding:1em;
       }
 
       @media (max-aspect-ratio: 1/1) {
-         img {
-            width: 90vw;
-            height: auto !important;
+         header img {
+            height: 60vh;
+            width: auto !important;
          }
 
          h2 {
             font-size: 8vw;
          }
 
-         h1 {
-
-            left: 10vw;
-            top: 0;
-            max-width: max-content;
+         #title {
+            left: calc(10vw + 1em);
+            top: calc(10% + 1em);
+            width: 100%;
+            align-items: start;
+            display: block;
          }
 
+         h1 {
+            max-width: 80%;
+         }
+         .wrapper{
+            width:100%;
+         }
+         section{
+            display:block;
+         }
       }
    </style>
 </head>
@@ -260,50 +279,53 @@
          <h3>
             計畫目的
          </h3>
-         <p class="wow animate__animated animate__fadeIn">作品集的目標是為了讓各個繪師能有被大眾看到的機會，以及推廣台灣獸圈的各個出色繪師，此作品集所有收益扣除印刷費、繪師稿費以及其他必要費用將全數捐出給予［台灣石虎保護協會Leopard cat Association of Taiwan］
+         <p class="wow animate__animated animate__fadeIn">
+            作品集的目標是為了讓各個繪師能有被大眾看到的機會，以及推廣台灣獸圈的各個出色繪師，此作品集所有收益扣除印刷費、繪師稿費以及其他必要費用將全數捐出給予［台灣石虎保護協會Leopard cat Association
+            of Taiwan］
          </p>
       </section>
-         <section id="about"  class="wow animate__animated animate__fadeIn">
-            <div class="wrapper"><img src="read.jpg" alt="read"></div>
-            <div class="wrapper">
-               <h3>
-                  活動參加辦法
-               </h3>
-               <p>繪師需提供使用的頭像、繪師名稱、社群網站網址或暱稱、需要使用的圖（最少四張最多七張）、及給讀者的話內容。將由團隊成員整理作品集版面後給予繪師過目。宣傳方式以網路廣告為主，將於作品集排版全部完成後會在此建立電子版作品集並以Facebook公開宣傳。
-                  宣傳內容為：部分繪師作品集圖透、參與繪師名單、印調、自由樂捐連結、額外樂捐贈禮禮品。</p>
-            </div>
-         </section>
-         <section id="risk" class="wow animate__animated animate__fadeIn">
-            <div class="wrapper">
-               <h3>
-                  風險評估以及避險措施
-               </h3>
-               <p>
-                  預計遇到的問題 - 作品集製作資金不足，將會把作品集紙質更換，壓低作品集的質量。繪師的稿費減少，或是後續補上。（待增）若資金不足，作品集預購日期將會延後。</p>
-            </div>
-            <div class="wrapper"><img src="draw.jpg" alt="read"></div>
-         </section>
-         <section id="work" class="wow animate__animated animate__fadeIn">
-            <div class="wrapper"><img src="point.jpg" alt="read"></div>
-            <div class="wrapper">
-               <h3>
-                  目前職位(歡迎你的加入!)
-               </h3>
-               <p>
-                  招收共同編輯作者、協作者、合作者等，如果有意願的人歡迎底下留言並說明你想要的職位，過審將會拉進DC。</p>
-               <ul>
-                  <li>編輯：薩波、小猦、澍星</li>
-                  <li>印務：澍星</li>
-                  <li>財務：</li>
-                  <li>監工：</li>
-                  <li>合作周邊商品者：伊秋</li>
-               </ul>
-               <p>若有其他可以幫忙的也可以留言，團隊會視情況來招收。</p>
-            </div>
-         </section>
+      <section id="about" class="wow animate__animated animate__fadeIn">
+         <div class="wrapper"><img src="read.jpg" alt="read"></div>
+         <div class="wrapper">
+            <h3>
+               活動參加辦法
+            </h3>
+            <p>繪師需提供使用的頭像、繪師名稱、社群網站網址或暱稱、需要使用的圖（最少四張最多七張）、及給讀者的話內容。將由團隊成員整理作品集版面後給予繪師過目。宣傳方式以網路廣告為主，將於作品集排版全部完成後會在此建立電子版作品集並以Facebook公開宣傳。
+               宣傳內容為：部分繪師作品集圖透、參與繪師名單、印調、自由樂捐連結、額外樂捐贈禮禮品。</p>
+         </div>
+      </section>
+      <section id="risk" class="wow animate__animated animate__fadeIn">
+         <div class="wrapper">
+            <h3>
+               風險評估以及避險措施
+            </h3>
+            <p>
+               預計遇到的問題 - 作品集製作資金不足，將會把作品集紙質更換，壓低作品集的質量。繪師的稿費減少，或是後續補上。（待增）若資金不足，作品集預購日期將會延後。</p>
+         </div>
+         <div class="wrapper"><img src="draw.jpg" alt="read"></div>
+      </section>
+      <section id="work" class="wow animate__animated animate__fadeIn">
+         <div class="wrapper"><img src="point.jpg" alt="read"></div>
+         <div class="wrapper">
+            <h3>
+               目前職位(歡迎你的加入!)
+            </h3>
+            <p>
+               招收共同編輯作者、協作者、合作者等，如果有意願的人歡迎底下留言並說明你想要的職位，過審將會拉進DC。</p>
+            <ul>
+               <li>編輯：薩波、小猦、澍星</li>
+               <li>印務：澍星</li>
+               <li>財務：</li>
+               <li>監工：</li>
+               <li>合作周邊商品者：伊秋</li>
+            </ul>
+            <p>若有其他可以幫忙的也可以留言，團隊會視情況來招收。</p>
+         </div>
+      </section>
    </main>
    <footer>
-
+2023 Furry Art in Taiwan<br>
+Github · Facebook
    </footer>
 </body>
 
