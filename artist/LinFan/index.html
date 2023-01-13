@@ -46,12 +46,58 @@
     <img class="avatar animate__animated animate__fadeIn" src=頭貼.webp />
   </header>
   <main>
-    <div class="container"> <img src="招財金兔.webp" alt="招財金兔" /></div>
+    <div class="container"> 
+      <figure>
+        <img src="招財金兔.webp" alt="招財金兔" />
+        <figcaption>招財金兔</figcaption>
+    </figure>
+    <figure>
+      <img src="2.三頭犬.webp" alt="三頭犬" />
+      <figcaption>三頭犬</figcaption>
+  </figure>
+  <figure>
+    <img src="3.亞洲蹲.webp" alt="亞洲蹲" />
+    <figcaption>亞洲蹲</figcaption>
+</figure>
+<figure>
+  <img src="4.鷹爪.webp" alt="鷹爪" />
+  <figcaption>鷹爪</figcaption>
+</figure>
+<figure>
+  <img src="5.機械手臂.webp" alt="機械手臂" />
+  <figcaption>機械手臂</figcaption>
+</figure>
+    </div>
   </main>
   <footer>Furry Art in Taiwan © 2023<br>
     <a href="https://github.com/furryart-tw">Github</a> · <a
       href="https://www.facebook.com/media/set/?set=a.184623570905984">Facebook</a>
   </footer>
+<div id="menu">
+    <div id="menu-bar" onclick="menuOnClick()">
+      <div id="bar1" class="bar"></div>
+      <div id="bar2" class="bar"></div>
+      <div id="bar3" class="bar"></div>
+    </div>
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="#">台灣獸人繪師作品集</a></li>
+        <li><a href="#">購買周邊</a></li>
+        <li><a href="#">上一位</a></li>
+        <li><a href="#">下一位</a></li>
+      </ul>
+    </nav> 
+  </div>
+  
+  <div class="menu-bg" id="menu-bg"></div>
+  <script>
+    // Burger Menu
+    function menuOnClick() {
+  document.getElementById("menu-bar").classList.toggle("change");
+  document.getElementById("nav").classList.toggle("change");
+  document.getElementById("menu-bg").classList.toggle("change-bg");
+}
+  </script>
   <script>var canvas;
     var stage;
     var particles = [];
