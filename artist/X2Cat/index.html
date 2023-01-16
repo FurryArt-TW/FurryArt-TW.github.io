@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>乗貳貓 - 台灣獸人繪師作品集</title>
+  <link rel="stylesheet" href="/artist/style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="/animate.min.css">
+  <style>
+    header {
+      background-color: #3322f2;
+    }
+    canvas {
+      width: 30vw;
+      height: 30vh;
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      scale: 3;
+      transform-origin: bottom right;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRTLW3X" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header>
+    <canvas id="game"></canvas>
+    <div id="title" class="animate__animated animate__fadeInRight">
+      <h1 class="animate__animated animate__zoomIn">乗貳貓</h1>
+      <div class="social">
+        <a href="https://www.facebook.com/X2CAT/" target="_blank"><img src="/static/facebook.svg" alt="Facebook"></a>
+        <a href="https://twitter.com/X2Cat_" target="_blank"><img src="/static/twitter.svg" alt="Twitter"></a>
+        <a href="https://www.plurk.com/asz58848" target="_blank"><img src="/static/plunk.svg" alt="Plunk"></a>
+      </div>
+      <p class="animate__animated animate__fadeIn">你好我是乗貳貓×2cat，數學符號的乘二，一直被叫錯成秉叡之類的需要強調一下，興趣畫點可愛的動物不嫌棄可以追隨一下。</p>
+    </div>
+    <div class="t2022 animate__animated animate__fadeIn">X2Cat</div>
+    <img class="avatar animate__animated animate__fadeIn" src=avatar.webp />
+  </header>
+  <main>
+    <div class="container"> 
+      <figure>
+        <img src="貳貓設定2022.webp" alt="貳貓設定2022" />
+        <figcaption>貳貓設定2022</figcaption>
+    </figure>
+    <figure>
+      <img src="2022獸無限認親卡.webp" alt="2022獸無限認親卡" />
+      <figcaption>2022獸無限認親卡</figcaption>
+  </figure>
+  <figure>
+    <img src="無限飲酒.webp" alt="無限飲酒" />
+    <figcaption>無限飲酒</figcaption>
+</figure>
+<figure>
+  <img src="獸無限2022.webp" alt="獸無限2022" />
+  <figcaption>獸無限2022</figcaption>
+</figure>
+<figure>
+  <img src="浪貓.webp" alt="浪貓" />
+  <figcaption>浪貓</figcaption>
+</figure>
+<figure>
+  <img src="安魂曲.webp" alt="安魂曲" />
+  <figcaption>安魂曲</figcaption>
+</figure>
+<figure>
+  <img src="哈奇滑鼠墊.webp" alt="哈奇滑鼠墊" />
+  <figcaption>哈奇滑鼠墊</figcaption>
+</figure>
+<a class="twitter-timeline" href="https://twitter.com/X2Cat_?ref_src=twsrc%5Etfw">Tweets by X2Cat_</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+    </div>
+  </main>
+  <footer>Furry Art in Taiwan © 2023<br>
+    <a href="https://github.com/furryart-tw">Github</a> · <a
+      href="https://www.facebook.com/media/set/?set=a.184623570905984">Facebook</a>
+  </footer>
+<div id="menu">
+    <div id="menu-bar" onclick="menuOnClick()">
+      <div id="bar1" class="bar"></div>
+      <div id="bar2" class="bar"></div>
+      <div id="bar3" class="bar"></div>
+    </div>
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="/">台灣獸人繪師作品集</a></li>
+        <li><a href="#">購買周邊</a></li>
+        <li><a href="../Tenjaku">天雀</a></li>
+        <li><a href="#">-</a></li>
+      </ul>
+    </nav> 
+  </div>
+  
+  <div class="menu-bg" id="menu-bg"></div>
+  <script>
+    // Burger Menu
+    function menuOnClick() {
+  document.getElementById("menu-bar").classList.toggle("change");
+  document.getElementById("nav").classList.toggle("change");
+  document.getElementById("menu-bg").classList.toggle("change-bg");
+}
+  </script>
+</body>
+
+</html>
