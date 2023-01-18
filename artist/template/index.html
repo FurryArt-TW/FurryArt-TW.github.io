@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>某人 - 台灣獸人繪師作品集</title>
+  <link rel="stylesheet" href="/artist/style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="/animate.min.css">
+  <style>
+    body {
+      background-color: #2f3c70;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at bottom, rgb(79, 110, 247, 0.5) 0%, rgb(0, 0, 0, 0.5) 80%);
+
+      z-index: 2;
+    }
+
+    figcaption,
+    footer,
+    footer a {
+      color: #FFF;
+    }
+
+    header canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(255, 255, 255, 0);
+      /*关键点*/
+      position: absolute;
+      z-index: 0;
+      /*确保在遮盖的元素的上方*/
+      width: 100%;
+      height: 100%;
+    }
+
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      border-radius: 5px;
+      z-index: 3;
+    }
+
+    footer {
+      background-color: #231e48;
+    }
+
+    @keyframes twinkle {
+      0% {
+        transform: scale(1, 1);
+        background: rgba(255, 255, 255, 0.0);
+        animation-timing-function: ease-in;
+      }
+
+      60% {
+        transform: scale(0.8, 0.8);
+        background: rgba(255, 255, 255, 1);
+        animation-timing-function: ease-out;
+      }
+
+      80% {
+        background: rgba(255, 255, 255, 0.00);
+        transform: scale(1, 1);
+      }
+
+      100% {
+        background: rgba(255, 255, 255, 0.0);
+        transform: scale(1, 1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRTLW3X" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <header>
+    <canvas id="game"></canvas>
+    <div id="title" class="animate__animated animate__fadeInRight">
+      <h1 class="animate__animated animate__zoomIn">天雀</h1>
+      <div class="social">
+        <a href="https://www.facebook.com/tenjaku0110" target="_blank"><img src="/static/facebook.svg"
+            alt="Facebook"></a>
+        <a href="https://twitter.com/Tenchiyue" target="_blank"><img src="/static/twitter.svg" alt="Twitter"></a>
+        <a href="https://youtube.com/@tenchiyue" target="_blank"><img src="/static/youtube.svg" alt="YouTube"></a>
+      </div>
+      <p class="animate__animated animate__fadeIn">只是隻愛畫圖、做動畫&打音G的惡魔毛龍。
+        <br />保持著初心，只為了追求快樂、夢想及進步，並同時散播歡樂給所有人。
+        <br />歡迎各位來交流喔>:D
+      </p>
+    </div>
+    <div class="t2022 animate__animated animate__fadeIn">Tenjaku</div>
+    <img class="avatar animate__animated animate__fadeIn" src=avatar.webp />
+  </header>
+  <main>
+    <div class="container">
+      <figure>
+        <img src="5.webp" alt="5兄弟" />
+        <figcaption>5兄弟</figcaption>
+      </figure>
+      <figure>
+        <img src="夏日.webp" alt="夏日玩水" />
+        <figcaption>夏日玩水</figcaption>
+      </figure>
+      <figure>
+        <img src="小羅.webp" alt="史萊姆來襲" />
+        <figcaption>史萊姆來襲</figcaption>
+      </figure>
+      <figure>
+        <img src="3人2.webp" alt="Top 3" />
+        <figcaption>Top 3</figcaption>
+      </figure>
+      <figure>
+        <img src="BBQ.webp" alt="BBQ" />
+        <figcaption>BBQ</figcaption>
+      </figure>
+      <figure>
+        <img src="hbd2.webp" alt="Happy Birthday" />
+        <figcaption>Happy Birthday</figcaption>
+      </figure>
+
+      <a class="twitter-timeline" href="https://twitter.com/Tenchiyue?ref_src=twsrc%5Etfw">推文載入中</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    </div>
+  </main>
+  <footer>Furry Art in Taiwan © 2023<br>
+    <a href="https://github.com/furryart-tw">Github</a> · <a
+      href="https://www.facebook.com/media/set/?set=a.184623570905984">Facebook</a>
+  </footer>
+  <div id="menu">
+    <div id="menu-bar" onclick="menuOnClick()">
+      <div id="bar1" class="bar"></div>
+      <div id="bar2" class="bar"></div>
+      <div id="bar3" class="bar"></div>
+    </div>
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="#">台灣獸人繪師作品集</a></li>
+        <li><a href="#">購買周邊</a></li>
+        <li><a href="#">上一位</a></li>
+        <li><a href="#">下一位</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="menu-bg" id="menu-bg"></div>
+  <script>
+    // Burger Menu
+    function menuOnClick() {
+      document.getElementById("menu-bar").classList.toggle("change");
+      document.getElementById("nav").classList.toggle("change");
+      document.getElementById("menu-bg").classList.toggle("change-bg");
+    }
+
+    for (var caca = 0; caca < 100; caca++) {
+      var star = document.createElement("div");
+      star.className = "star";
+      star.style.animation = "twinkle " + ((Math.random() * 4) + 4) + "s linear " + (Math.random() * 5) + "s infinite";
+      star.style.top = Math.random() * window.innerHeight + "px";
+      star.style.left = Math.random() * window.innerWidth + "px";
+      document.getElementsByTagName('header')[0].appendChild(star);
+    }
+  </script>
+  <script>
+
+    'use strict';
+
+    // js1024 shim
+    const a = document.createElement('canvas');
+    document.getElementsByTagName('header')[0].appendChild(a);
+    a.width = innerWidth;
+    a.height = innerHeight;
+    const c = a.getContext("2d");
+    const d = document;
+
+    const zzfxR = 44100; // sample rate
+
+    // variables
+    let brightness, i, frame, rand, lightning, mouseX, zzfxX, zzfx;
+
+    zzfxX = new (window.AudioContext || webkitAudioContext); // audio context
+    zzfx = e => {
+      // init parameters
+      let PI2 = Math.PI * 2,
+        b = [], i = 0, c = 0, s = 0, length, buffer, source,
+        volume = e ? .1 + rand(.2) : .02,
+        attack = 3,
+        decay = 0,
+        sustain = 0,
+        release = 3,
+        bitCrush = .05 + rand(.05),
+        delay = .2 + rand(.2),
+        sustainVolume = 1;
+
+      if (e == 1) {
+        attack = .1,
+          decay = .1,
+          sustain = rand(),
+          release = 3 + rand(2),
+          sustainVolume = .5,
+          bitCrush = .5 + rand(1);
+        delay = .3 + rand(.5);
+      }
+
+      // scale by sample rate
+      attack *= zzfxR;
+      decay *= zzfxR;
+      sustain *= zzfxR;
+      release *= zzfxR;
+      delay *= zzfxR;
+
+      // generate waveform
+      for (length = attack + decay + sustain + release + delay | 0;
+        i < length; b[i++] = s) {
+        if (!(++c % (bitCrush * 100 | 0)))                      // bit crush
+        {
+          s = Math.random();                    // 4 noise;
+
+          s = s *       // curve 0=square, 2=pointy
+            volume * (                        // envelope
+              i < attack ? i / attack :                   // attack
+                i < attack + decay ?                      // decay
+                  1 - ((i - attack) / decay) * (1 - sustainVolume) :  // decay falloff
+                  i < attack + decay + sustain ?           // sustain
+                    sustainVolume :                           // sustain volume
+                    i < length - delay ?                      // release
+                      (length - i - delay) / release *            // release falloff
+                      sustainVolume :                           // release volume
+                      0);                                       // post release
+
+          s = delay ? s / 2 + (delay > i ? 0 :            // delay
+            (i < length - delay ? 1 : (length - i) / delay) *  // release delay 
+            b[i - delay | 0] / 2) : s;                      // sample delay
+        }
+      }
+
+      // play audio
+      buffer = zzfxX.createBuffer(1, length, zzfxR);
+      buffer.getChannelData(0).set(b);
+      source = zzfxX.createBufferSource();
+      source.buffer = buffer;
+      source.connect(zzfxX.destination);
+      source.start();
+      return source;
+    }
+
+    // init
+    rand = (r = 1) => Math.random() * r;
+    lightning = (X, Y, V, Z) => c.fillRect(X, Y, Z, Z,
+      rand(99) > 98 && Z > 9 && lightning(X, Y, V, rand(Z * .8) + 2),
+      Y < a.height && lightning(X + V * Z / 9, Y + Z / 4, rand(99) > 95 ? rand(8) - 4 : V, Z))
+
+    brightness = frame = mouseX = 0;
+
+    setInterval(_ => // main game loop
+    {
+      /*c.fillStyle='#000';
+      c.font = '8in"';
+      c.fillText('JS1024',199,1e3)*/
+
+      // set background color
+      c.globalCompositeOperation = 'source-over';
+      if (frame)
+        c.fillStyle = `hsl(240,30%,${brightness -= 3}%,.1`;
+
+      // rain sound
+      ++frame % 60 || zzfx();
+
+      if (a.width != innerWidth || a.height != innerHeight) {
+        a.width = innerWidth;
+        a.height = innerHeight;
+      }
+
+      // fill background
+
+      c.fillRect(0, 0, a.width, a.height);
+
+
+      // lightning
+      c.globalCompositeOperation = 'screen';
+      c.fillStyle = '#8bf5';
+      if (mouseX || rand() < .004 && brightness < 0) {
+        brightness = 80 + rand(20);
+        lightning(mouseX || rand(a.width), 0, 0, rand(19) + 9);
+        zzfx(1);
+        mouseX = 0;
+      }
+
+      onmousedown = e => mouseX = e.x;
+    },
+      16); // 60 fps update
+
+  </script>
+</body>
+
+</html>
