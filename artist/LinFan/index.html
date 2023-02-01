@@ -12,6 +12,7 @@
     header {
       background-color: #570303;
     }
+
     canvas {
       width: 30vw;
       height: 30vh;
@@ -23,23 +24,31 @@
       transform-origin: bottom right;
     }
   </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0RBSRK7J29"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-0RBSRK7J29');
+  </script>
 </head>
 
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRTLW3X" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
   <header>
     <canvas id="game"></canvas>
     <div id="title" class="animate__animated animate__fadeInRight">
       <h1 class="animate__animated animate__zoomIn">麟風</h1>
       <div class="social">
-        <a href="https://www.facebook.com/yifan.chen.1293" target="_blank"><img src="/static/facebook.svg" alt="Facebook"></a>
+        <a href="https://www.facebook.com/yifan.chen.1293" target="_blank"><img src="/static/facebook.svg"
+            alt="Facebook"></a>
         <a href="https://twitter.com/LinFan1590" target="_blank"><img src="/static/twitter.svg" alt="Twitter"></a>
         <a href="https://www.plurk.com/ellen159" target="_blank"><img src="/static/plunk.svg" alt="Plunk"></a>
-        <a href="https://www.instagram.com/linfan159/" target="_blank"><img src="/static/instagram.svg" alt="Instagram"></a></div>
-      
+        <a href="https://www.instagram.com/linfan159/" target="_blank"><img src="/static/instagram.svg"
+            alt="Instagram"></a>
+      </div>
+
       <p class="animate__animated animate__fadeIn">嗨！我是麟風，是個喜愛畫圖、動物、音樂、動畫與電影的火系黑狼！<br>
         期許自身不忘原點，一步步行走在目標的道路上，並透過畫作傳遞感情與見聞，歡迎認識交流！:D</p>
     </div>
@@ -47,36 +56,37 @@
     <img class="avatar animate__animated animate__fadeIn" src=avatar.webp />
   </header>
   <main>
-    <div class="container"> 
+    <div class="container">
       <figure>
         <img src="招財金兔.webp" alt="招財金兔" />
         <figcaption>招財金兔</figcaption>
-    </figure>
-    <figure>
-      <img src="2.三頭犬.webp" alt="三頭犬" />
-      <figcaption>三頭犬</figcaption>
-  </figure>
-  <figure>
-    <img src="3.亞洲蹲.webp" alt="亞洲蹲" />
-    <figcaption>亞洲蹲</figcaption>
-</figure>
-<figure>
-  <img src="4.鷹爪.webp" alt="鷹爪" />
-  <figcaption>鷹爪</figcaption>
-</figure>
-<figure>
-  <img src="5.機械手臂.webp" alt="機械手臂" />
-  <figcaption>機械手臂</figcaption>
-</figure>
+      </figure>
+      <figure>
+        <img src="2.三頭犬.webp" alt="三頭犬" />
+        <figcaption>三頭犬</figcaption>
+      </figure>
+      <figure>
+        <img src="3.亞洲蹲.webp" alt="亞洲蹲" />
+        <figcaption>亞洲蹲</figcaption>
+      </figure>
+      <figure>
+        <img src="4.鷹爪.webp" alt="鷹爪" />
+        <figcaption>鷹爪</figcaption>
+      </figure>
+      <figure>
+        <img src="5.機械手臂.webp" alt="機械手臂" />
+        <figcaption>機械手臂</figcaption>
+      </figure>
 
-<a class="twitter-timeline" href="https://twitter.com/LinFan1590?ref_src=twsrc%5Etfw">Tweets by LinFan1590</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+      <a class="twitter-timeline" href="https://twitter.com/LinFan1590?ref_src=twsrc%5Etfw">Tweets by LinFan1590</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </main>
   <footer>Furry Art in Taiwan © 2023<br>
     <a href="https://github.com/furryart-tw">Github</a> · <a
       href="https://www.facebook.com/media/set/?set=a.184623570905984">Facebook</a>
   </footer>
-<div id="menu">
+  <div id="menu">
     <div id="menu-bar" onclick="menuOnClick()">
       <div id="bar1" class="bar"></div>
       <div id="bar2" class="bar"></div>
@@ -89,17 +99,17 @@
         <li><a href="#">上一位</a></li>
         <li><a href="../Tenjaku">天雀</a></li>
       </ul>
-    </nav> 
+    </nav>
   </div>
-  
+
   <div class="menu-bg" id="menu-bg"></div>
   <script>
     // Burger Menu
     function menuOnClick() {
-  document.getElementById("menu-bar").classList.toggle("change");
-  document.getElementById("nav").classList.toggle("change");
-  document.getElementById("menu-bg").classList.toggle("change-bg");
-}
+      document.getElementById("menu-bar").classList.toggle("change");
+      document.getElementById("nav").classList.toggle("change");
+      document.getElementById("menu-bg").classList.toggle("change-bg");
+    }
   </script>
   <script>var canvas;
     var stage;
