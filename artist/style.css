@@ -68,7 +68,7 @@ h1 {
    color: rgb(181, 181, 181, .3);
    right: 0;
    top: 0;
-   font-size: 10em;
+   font-size: 7em;
    z-index: 5;
    --animate-delay: 2s;
    font-family: monospace;
