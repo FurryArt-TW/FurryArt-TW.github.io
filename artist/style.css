@@ -39,7 +39,6 @@ header .avatar {
    z-index: 4;
 }
 
-
 #title {
    z-index: 3;
    position: absolute;
@@ -121,9 +120,11 @@ footer {
    background-color: #ffce50;
 }
 
+figcaption,
+footer,
 footer a {
    text-decoration: none;
-   color: black;
+  color: #FFF;
 }
 
 @media (max-aspect-ratio: 4/3) {
