@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>吉吉貓 - 台灣獸人繪師作品集</title>
+  <meta property="og:image" content="avatar.webp">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:title" content="吉吉貓 - 台灣獸人繪師作品集">
+  <meta property="og:description" content="台灣獸人繪師作品集">
+  <link rel="stylesheet" href="/artist/style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="/animate.min.css">
+  <style>
+    body {
+      background-color: #FFF8C3;
+    }
+
+    figcaption,
+    footer,
+    footer a {
+      color: #6e6103;
+    }
+
+    header {
+      background-color: #86AE00;
+      background-image: linear-gradient(#86AE00 10%, #FFF8C3 90%);
+    }
+
+    footer {
+      background-color: #231e48;
+    }
+
+    figure {
+      width: auto;
+    }
+
+    @keyframes twinkle {
+      0% {
+        transform: scale(1, 1);
+        background: rgba(255, 255, 255, 0.0);
+        animation-timing-function: ease-in;
+      }
+
+      60% {
+        transform: scale(0.8, 0.8);
+        background: rgba(255, 255, 255, 1);
+        animation-timing-function: ease-out;
+      }
+
+      80% {
+        background: rgba(255, 255, 255, 0.00);
+        transform: scale(1, 1);
+      }
+
+      100% {
+        background: rgba(255, 255, 255, 0.0);
+        transform: scale(1, 1);
+      }
+    }
+  </style>
+  <style>
+    @media (min-aspect-ratio: 4/3) {
+      figure img {
+        height: 80%;
+      }
+
+      .figure {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+      }
+
+      figcaption {
+        margin: 0;
+        color: black;
+      }
+
+      .angry-grid {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px;
+        grid-auto-rows: minmax(80px, auto);
+        height: 100vw;
+
+      }
+
+      #item-0 {
+
+        background-color: #A95DBF;
+        grid-row-start: 1;
+        grid-column-start: 4;
+
+        grid-row-end: 3;
+        grid-column-end: 6;
+
+      }
+
+      #item-1 {
+
+        background-color: #CCBE67;
+        grid-row-start: 2;
+        grid-column-start: 7;
+
+        grid-row-end: 3;
+        grid-column-end: 8;
+
+      }
+
+      #item-2 {
+
+        background-color: #B9597D;
+        grid-row-start: 3;
+        grid-column-start: 5;
+
+        grid-row-end: 5;
+        grid-column-end: 8;
+
+      }
+
+      #item-3 {
+
+        background-color: #77CBBA;
+        grid-row-start: 1;
+        grid-column-start: 1;
+
+        grid-row-end: 4;
+        grid-column-end: 3;
+
+      }
+
+      #item-4 {
+
+        background-color: #CC5679;
+        grid-row-start: 6;
+        grid-column-start: 2;
+
+        grid-row-end: 7;
+        grid-column-end: 3;
+
+      }
+
+      #item-5 {
+
+        background-color: #E577DA;
+        grid-row-start: 4;
+        grid-column-start: 1;
+
+        grid-row-end: 6;
+        grid-column-end: 4;
+
+      }
+
+      #item-6 {
+
+        background-color: #C98AF6;
+        grid-row-start: 4;
+        grid-column-start: 4;
+
+        grid-row-end: 5;
+        grid-column-end: 5;
+
+      }
+
+      #item-7 {
+
+        background-color: #97D7C5;
+        grid-row-start: 5;
+        grid-column-start: 6;
+
+        grid-row-end: 7;
+        grid-column-end: 8;
+
+      }
+    }
+
+    @media (max-aspect-ratio: 4/3) {
+      .container,.angry-grid, .angry-grid >div,figcaption,figure img{
+        display:block;
+      }
+      figure img {
+        width: 80%;}
+        
+       figcaption {
+        float: right;
+      }
+
+      .angry-grid figure:nth-of-type(odd) figcaption {
+        float: left;
+      }
+
+
+
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0RBSRK7J29"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-0RBSRK7J29');
+  </script>
+</head>
+
+<body>
+  <header>
+    <canvas id="game"></canvas>
+    <div id="title" class="animate__animated animate__fadeInRight">
+      <h1 class="animate__animated animate__zoomIn">吉吉貓</h1>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=100007295268116" target="_blank"><img
+            src="/static/facebook.svg" alt="Facebook"></a>
+        <a href="https://twitter.com/red2243" target="_blank"><img src="/static/twitter.svg" alt="Twitter"></a>
+      </div>
+      <p class="animate__animated animate__fadeIn">你好，我的性別認同是坦克車。沒時間畫畫了!
+      </p>
+    </div>
+    <div class="t2022 animate__animated animate__fadeIn">KIGI</div>
+    <img class="avatar animate__animated animate__fadeIn" src=avatar.webp />
+  </header>
+  <main>
+    <div class="container">
+      <div class="angry-grid">
+        <div id="item-0">
+          <figure>
+            <img src="01_練習塗鴉各式種族.webp" alt="01_練習塗鴉各式種族" />
+            <figcaption>01_練習塗鴉各式種族</figcaption>
+          </figure>
+        </div>
+        <div id="item-1">
+          <figure>
+            <img src="07_山羌.webp" alt="07_山羌" />
+            <figcaption>07_山羌</figcaption>
+          </figure>
+        </div>
+        <div id="item-2">
+          <figure>
+            <img src="04_明黎默龍.webp" alt="04_明黎默龍" />
+            <figcaption>04_明黎默龍</figcaption>
+          </figure>
+        </div>
+        <div id="item-3">
+          <figure>
+            <img src="02_2019蝜芾ˊ.webp" alt="02_2019蝜芾ˊ" />
+            <figcaption>02_2019蝜芾ˊ</figcaption>
+          </figure>
+        </div>
+        <div id="item-4">
+          <figure>
+            <img src="05_三角形塗鴉.webp" alt="05_三角形塗鴉" />
+            <figcaption>05_三角形塗鴉</figcaption>
+          </figure>
+        </div>
+        <div id="item-5">
+          <figure>
+            <img src="03_2017PS繪製.webp" alt="03_2017PS繪製" />
+            <figcaption>03_2017PS繪製</figcaption>
+          </figure>
+        </div>
+        <div id="item-6">
+          <figure>
+            <img src="06_圖像.webp" alt="06_圖像" />
+            <figcaption>06_圖像</figcaption>
+          </figure>
+        </div>
+        <div id="item-7">
+          <figure>
+            <img src="08_頭像波古.webp" alt="08_頭像波古" />
+            <figcaption>08_頭像波古</figcaption>
+          </figure>
+        </div>
+      </div>
+      <a class="twitter-timeline" href="https://twitter.com/red2243?ref_src=twsrc%5Etfw">推文載入中</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    </div>
+  </main>
+  <footer>Furry Art in Taiwan © 2023<br>
+    <a href="https://github.com/furryart-tw">Github</a> · <a
+      href="https://www.facebook.com/media/set/?set=a.184623570905984">Facebook</a>
+  </footer>
+  <div id="menu">
+    <div id="menu-bar" onclick="menuOnClick()">
+      <div id="bar1" class="bar"></div>
+      <div id="bar2" class="bar"></div>
+      <div id="bar3" class="bar"></div>
+    </div>
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="#">台灣獸人繪師作品集</a></li>
+        <li><a href="#">購買周邊</a></li>
+        <li><a href="#">上一位</a></li>
+        <li><a href="#">下一位</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="menu-bg" id="menu-bg"></div>
+  <script>
+    // Burger Menu
+    function menuOnClick() {
+      document.getElementById("menu-bar").classList.toggle("change");
+      document.getElementById("nav").classList.toggle("change");
+      document.getElementById("menu-bg").classList.toggle("change-bg");
+    }
+  </script>
+
+</body>
+
+</html>
