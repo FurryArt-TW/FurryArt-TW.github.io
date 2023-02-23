@@ -37,6 +37,7 @@ header .avatar {
    left: 0;
    bottom: 0;
    z-index: 4;
+   margin-left: 5%;
 }
 
 #title {
