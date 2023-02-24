@@ -17,9 +17,7 @@
       background-color: #FFF8C3;
     }
 
-    figcaption,
-    footer,
-    footer a {
+    figcaption {
       color: #6e6103;
     }
 
@@ -28,8 +26,10 @@
       background-image: linear-gradient(#86AE00 10%, #FFF8C3 90%);
     }
 
-    footer {
-      background-color: #231e48;
+    footer,
+    footer a {
+      background-color: #86AE00;
+      color:#FFF8C3;
     }
 
     figure {
@@ -86,7 +86,7 @@
         gap: 0px;
         grid-auto-rows: minmax(80px, auto);
         height: 100vw;
-
+        margin-bottom: 1rem;
       }
 
       #item-0 {
@@ -178,23 +178,70 @@
       }
     }
 
+    @keyframes rotate-back-and-forth {
+      0% {
+        transform: rotate(-45deg);
+      }
+
+      50% {
+        transform: rotate(45deg);
+      }
+
+      100% {
+        transform: rotate(-45deg);
+      }
+    }
+
+    @keyframes move-up-and-down {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(20px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .ud {
+      animation: move-up-and-down 2s infinite;
+    }
+
+    header .l {
+      left: -9.5vh;
+      bottom: 17vh;
+    }
+
+    header .r {
+      left: 35.5vh;
+      bottom: 16.5vh;
+    }
+
+    header .hands {
+      height: 36vh;
+      animation: rotate-back-and-forth 2s infinite;
+
+
+    }
+
     @media (max-aspect-ratio: 4/3) {
-      .container,.angry-grid, .angry-grid >div,figcaption,figure img{
-        display:block;
-      }
-      figure img {
-        width: 80%;}
-        
-       figcaption {
-        float: right;
+      header .l {
+        left: -6.5vh;
+        bottom: 11vh;
       }
 
-      .angry-grid figure:nth-of-type(odd) figcaption {
-        float: left;
+      header .r {
+        left: 23.5vh;
+        bottom: 11.5vh;
       }
 
+      header .hands {
+        height: 24vh;
 
-
+      }
     }
   </style>
   <!-- Google tag (gtag.js) -->
@@ -221,8 +268,15 @@
       <p class="animate__animated animate__fadeIn">你好，我的性別認同是坦克車。沒時間畫畫了!
       </p>
     </div>
-    <div class="t2022 animate__animated animate__fadeIn">KIGI</div>
-    <img class="avatar animate__animated animate__fadeIn" src=avatar.webp />
+    <div class="t2022 animate__animated animate__pulse">KIGI</div>
+    <div class="kigi"> <img class="avatar" src=avatar/body.png />
+      <img class="avatar ud " src=avatar/feet.png />
+      <img class="avatar ud" src=avatar/head.png />
+      <img class="avatar hands l" src=avatar/hand-l.png />
+      <img class="avatar hands r" src=avatar/hand-r.png />
+    </div>
+
+
   </header>
   <main>
     <div class="container">
