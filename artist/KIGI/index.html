@@ -29,7 +29,7 @@
     footer,
     footer a {
       background-color: #86AE00;
-      color:#FFF8C3;
+      color: #FFF8C3;
     }
 
     figure {
@@ -257,7 +257,6 @@
 
 <body>
   <header>
-    <canvas id="game"></canvas>
     <div id="title" class="animate__animated animate__fadeInRight">
       <h1 class="animate__animated animate__zoomIn">吉吉貓</h1>
       <div class="social">
@@ -274,6 +273,8 @@
       <img class="avatar ud" src=avatar/head.png />
       <img class="avatar hands l" src=avatar/hand-l.png />
       <img class="avatar hands r" src=avatar/hand-r.png />
+      <img class="avatar ud" id="half-open" src=avatar/mid.png />
+      <img class="avatar ud" id="open" src=avatar/open.png />
     </div>
 
 
@@ -362,6 +363,24 @@
       document.getElementById("menu-bar").classList.toggle("change");
       document.getElementById("nav").classList.toggle("change");
       document.getElementById("menu-bg").classList.toggle("change-bg");
+    }
+    var half = document.getElementById("half-open");
+    var open = document.getElementById("open");
+    const delay = (n) => new Promise(r => setTimeout(r, n * 1000));
+    myAsyncFunction()
+    async function myAsyncFunction() {
+      while (true) {
+        half.style.opacity = "0";
+        open.style.opacity = "1";
+        await delay(3);
+        half.style.opacity = "1";
+        open.style.opacity = "0";
+        await delay(0.1);
+        half.style.opacity = "0";
+        await delay(0.1);
+        half.style.opacity = "1";
+        await delay(0.1);
+      }
     }
   </script>
 
