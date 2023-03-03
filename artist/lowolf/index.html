@@ -5,17 +5,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>甜狐 - 台灣獸人繪師作品集</title>
+  <title>沉默之狼 - 台灣獸人繪師作品集</title>
   <meta property="og:image" content="avatar.webp">
-<meta property="og:image:type" content="image/png">
-<meta property="og:title" content="甜狐 - 台灣獸人繪師作品集">
-<meta property="og:description" content="台灣獸人繪師作品集">
+  <meta property="og:image:type" content="image台灣獸人繪師作品集">
+  <meta property="og:description" content="/webp">
+  <meta property="og:title" content="沉默之狼 - 台灣獸人繪師作品集">
   <link rel="stylesheet" href="/artist/style.css" type="text/css" media="all" />
   <link rel="stylesheet" href="/animate.min.css">
+  <!--credit to https://github.com/danielstuart14/CSS_FOG_ANIMATION-->
+  <link rel="stylesheet" href="fog/fog.css">
   <style>
     body {
-      background-color: #2f3c70;
+      background-color: #BEBEBE;
     }
+    header .avatar{
+      z-index: 3;
+    }
+
+    #title {
+      z-index: 5;
+    }
+
 
     figcaption,
     footer,
@@ -64,51 +74,60 @@
 
 <body>
   <header>
-    <canvas id="game"></canvas>
-    <div id="title" class="animate__animated animate__fadeInRight">
-      <h1 class="animate__animated animate__zoomIn">甜狐</h1>
-      <div class="social">
-        <a href="https://www.facebook.com/tenjaku0110" target="_blank"><img src="/static/facebook.svg"
-            alt="Facebook"></a>
-        <a href="https://twitter.com/Tenchiyue" target="_blank"><img src="/static/twitter.svg" alt="Twitter"></a>
-        <a href="https://youtube.com/@tenchiyue" target="_blank"><img src="/static/youtube.svg" alt="YouTube"></a>
+    <div class="fogwrapper">
+      <div id="foglayer_01" class="fog">
+        <div class="image01"></div>
+        <div class="image02"></div>
       </div>
-      <p class="animate__animated animate__fadeIn">只是隻愛畫圖、做動畫&打音G的惡魔毛龍。
-        <br />保持著初心，只為了追求快樂、夢想及進步，並同時散播歡樂給所有人。
-        <br />歡迎各位來交流喔>:D
+      <div id="foglayer_02" class="fog">
+        <div class="image01"></div>
+        <div class="image02"></div>
+      </div>
+      <div id="foglayer_03" class="fog">
+        <div class="image01"></div>
+        <div class="image02"></div>
+      </div>
+    </div>
+    <div id="title" class="animate__animated animate__fadeInRight">
+      <h1 class="animate__animated animate__zoomIn">沉默之狼</h1>
+      <div class="social">
+        <a href="https://www.facebook.com/dandelion.liou" target="_blank"><img src="/static/facebook.svg"
+            alt="Facebook"></a>
+        <a href="https://twitter.com/inkdandelion6" target="_blank"><img src="/static/twitter.svg" alt="Twitter"></a>
+        <a href="https://www.plurk.com/lowolf" target="_blank"><img src="/static/plunk.svg" alt="plunk"></a>
+        <a href="https://sites.google.com/view/inksnowflying" target="_blank"><img src="/static/link-45deg.svg" alt="link"></a>
+      </div>
+      <p class="animate__animated animate__fadeIn">默狼、默默、墨墨
+        <br />晃來晃去，開開心心畫圖。
       </p>
     </div>
-    <div class="t2022 animate__animated animate__fadeIn">Tenjaku</div>
+    <div class="t2022 animate__animated animate__fadeIn">lowolf</div>
     <img class="avatar animate__animated animate__fadeIn" src=avatar.webp />
   </header>
   <main>
     <div class="container">
       <figure>
-        <img src="5.webp" alt="5兄弟" />
-        <figcaption>5兄弟</figcaption>
+        <img src="2022聖誕卡.webp" alt="2022聖誕卡" />
+        <figcaption>2022聖誕卡</figcaption>
       </figure>
       <figure>
-        <img src="夏日.webp" alt="夏日玩水" />
-        <figcaption>夏日玩水</figcaption>
+        <img src="大冠鷲.webp" alt="大冠鷲" />
+        <figcaption>大冠鷲</figcaption>
       </figure>
       <figure>
-        <img src="小羅.webp" alt="史萊姆來襲" />
-        <figcaption>史萊姆來襲</figcaption>
+        <img src="白鼻心前輩.webp" alt="白鼻心前輩" />
+        <figcaption>白鼻心前輩</figcaption>
       </figure>
       <figure>
-        <img src="3人2.webp" alt="Top3" />
-        <figcaption>Top 3</figcaption>
+        <img src="亞特蘭提斯_無字.webp" alt="亞特蘭提斯_無字" />
+        <figcaption>亞特蘭提斯_無字</figcaption>
       </figure>
       <figure>
-        <img src="BBQ.webp" alt="BBQ" />
-        <figcaption>BBQ</figcaption>
-      </figure>
-      <figure>
-        <img src="hbd2.webp" alt="Happy" />
-        <figcaption>Happy</figcaption>
+        <img src="綠鬣抱枕反面.webp" alt="綠鬣抱枕反面" />
+        <figcaption>綠鬣抱枕反面</figcaption>
       </figure>
 
-      <a class="twitter-timeline" href="https://twitter.com/Tenchiyue?ref_src=twsrc%5Etfw">推文載入中</a>
+      <a class="twitter-timeline" href="https://twitter.com/inkdandelion6?ref_src=twsrc%5Etfw">推文載入中</a>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
     </div>

@@ -1,0 +1,149 @@
+body {
+  overflow-x: hidden;
+}
+
+/* FOG ANIMATION */
+.fogwrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 4;
+}
+
+#foglayer_01 {
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+  -webkit-animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite;
+}
+
+#foglayer_01 .image01,
+#foglayer_01 .image02 {
+  background: url("fog1.png") repeat-x top left transparent;
+  background-size: 100%;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+#foglayer_02 {
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  animation: foglayer_02_opacity 21s linear infinite,
+    foglayer_moveme 13s linear infinite;
+  -webkit-animation: foglayer_01_opacity 21s linear infinite,
+    foglayer_moveme 13s linear infinite;
+}
+
+#foglayer_02 .image01,
+#foglayer_02 .image02 {
+  background: url("fog2.png") repeat-x top left transparent;
+  background-size: 100%;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+#foglayer_03 {
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  animation: foglayer_02_opacity 21s linear infinite,
+    foglayer_moveme 13s linear infinite;
+  -webkit-animation: foglayer_01_opacity 21s linear infinite,
+    foglayer_moveme 13s linear infinite;
+}
+
+#foglayer_03 .image01,
+#foglayer_03 .image02 {
+  background: url("fog2.png") repeat-x top left transparent;
+  background-size: 100%;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+@media (max-aspect-ratio: 4/3) {
+  
+}
+@keyframes foglayer_01_opacity {
+  0% {
+    opacity: .7;
+  }
+
+  22% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: .58;
+  }
+
+  58% {
+    opacity: .7;
+  }
+
+  80% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: .4;
+  }
+}
+
+@keyframes foglayer_02_opacity {
+  0% {
+    opacity: .1;
+  }
+
+  25% {
+    opacity: .6;
+  }
+
+  50% {
+    opacity: .8;
+  }
+
+  80% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: .7;
+  }
+}
+
+@keyframes foglayer_03_opacitya {
+  0% {
+    opacity: .1;
+  }
+
+  27% {
+    opacity: .7;
+  }
+
+  52% {
+    opacity: 1;
+  }
+
+  68% {
+    opacity: .8;
+  }
+
+  100% {
+    opacity: 6;
+  }
+}
+
+@keyframes foglayer_moveme {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
