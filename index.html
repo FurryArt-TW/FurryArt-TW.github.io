@@ -94,8 +94,9 @@
          height: 55svh;
       }
       #close{
-         opacity: 0;
+         visibility: hidden;
          animation: image 3.3s infinite;
+         display: none;
       }
 
       #title {
@@ -488,6 +489,9 @@
          document.getElementById("menu-bar").classList.toggle("change");
          document.getElementById("nav").classList.toggle("change");
          document.getElementById("menu-bg").classList.toggle("change-bg");
+      }
+      window.onload = function () {
+         document.getElementById("close").style.visibility = "visible";
       }
    </script>
 </body>
