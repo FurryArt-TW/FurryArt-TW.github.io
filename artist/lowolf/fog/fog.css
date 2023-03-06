@@ -21,7 +21,7 @@ body {
 
 #foglayer_01 .image01,
 #foglayer_01 .image02 {
-  background: url("fog1.png") repeat-x top left transparent;
+  background: url("fog1.webp") repeat-x top left transparent;
   background-size: 100%;
   width: 50%;
   height: 100%;
@@ -40,7 +40,7 @@ body {
 
 #foglayer_02 .image01,
 #foglayer_02 .image02 {
-  background: url("fog2.png") repeat-x top left transparent;
+  background: url("fog2.webp") repeat-x top left transparent;
   background-size: 100%;
   width: 50%;
   height: 100%;
@@ -59,7 +59,7 @@ body {
 
 #foglayer_03 .image01,
 #foglayer_03 .image02 {
-  background: url("fog2.png") repeat-x top left transparent;
+  background: url("fog2.webp") repeat-x top left transparent;
   background-size: 100%;
   width: 50%;
   height: 100%;
