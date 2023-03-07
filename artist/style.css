@@ -75,11 +75,13 @@ h1 {
    font-family: monospace;
    opacity: 0.6;
 }
-.social{
-   display:flex;
+
+.social {
+   display: flex;
    align-items: center;
    gap: 0.4em;
 }
+
 .social img {
    display: inline-block;
    height: 1em;
@@ -105,12 +107,13 @@ figure img {
    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
-figure{
+figure {
    width: 100%;
-   margin:0 0 2em 0;
-   text-align:center
+   margin: 0 0 2em 0;
+   text-align: center
 }
-figcaption{
+
+figcaption {
    margin-top: 0.5em;
    font-size: 1.5em;
 }
@@ -125,7 +128,14 @@ figcaption,
 footer,
 footer a {
    text-decoration: none;
-  color: #FFF;
+   color: #FFF;
+}
+
+.twitter-timeline{
+   display:block;
+text-decoration: none;
+color: #1DA1F2;
+text-align: center;
 }
 
 @media (max-aspect-ratio: 4/3) {
@@ -152,63 +162,64 @@ footer a {
 
 #menu {
    z-index: 10;
- }
- 
- #menu-bar {
+}
+
+#menu-bar {
    width: 45px;
    height: 40px;
    margin: 30px 0 20px 20px;
    cursor: pointer;
- }
- 
- .bar {
+}
+
+.bar {
    height: 5px;
    width: 100%;
    background-color: #DC052D;
    display: block;
    border-radius: 5px;
    transition: 0.3s ease;
- }
- 
- #bar1 {
+}
+
+#bar1 {
    transform: translateY(-4px);
- }
- 
- #bar3 {
+}
+
+#bar3 {
    transform: translateY(4px);
- }
- 
- .nav {
+}
+
+.nav {
    transition: 0.3s ease;
    display: none;
- }
- 
- .nav ul {
+}
+
+.nav ul {
    padding: 0 22px;
- }
- 
- .nav li {
+}
+
+.nav li {
    list-style: none;
    padding: 12px 0;
- }
- 
- .nav li a {
+}
+
+.nav li a {
    color: white;
    font-size: 20px;
    text-decoration: none;
- }
- 
- .nav li a:hover {
+}
+
+.nav li a:hover {
    font-weight: bold;
- }
- 
- .menu-bg, #menu {
+}
+
+.menu-bg,
+#menu {
    top: 0;
    left: 0;
    position: fixed;
- }
- 
- .menu-bg {
+}
+
+.menu-bg {
    z-index: 1;
    width: 0;
    height: 0;
@@ -216,30 +227,31 @@ footer a {
    background: radial-gradient(circle, #DC052D, #DC052D);
    border-radius: 50%;
    transition: 0.3s ease;
- }
- 
- .change {
+}
+
+.change {
    display: block;
- }
- 
- .change .bar {
+}
+
+.change .bar {
    background-color: white;
- }
- 
- .change #bar1 {
+}
+
+.change #bar1 {
    transform: translateY(4px) rotateZ(-45deg);
- }
- 
- .change #bar2 {
+}
+
+.change #bar2 {
    opacity: 0;
- }
- 
- .change #bar3 {
+}
+
+.change #bar3 {
    transform: translateY(-6px) rotateZ(45deg);
- }
- 
- .change-bg {
+}
+
+.change-bg {
    width: 520px;
    height: 460px;
-   transform: translate(-60%,-30%);
- }
+   transform: translate(-60%, -30%);
+}
+

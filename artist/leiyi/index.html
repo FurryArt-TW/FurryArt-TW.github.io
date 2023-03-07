@@ -20,11 +20,30 @@
     figcaption,
     footer,
     footer a {
-      color: #FFF;
+      color: #af842d;
     }
 
     footer {
-      background-color: #231e48;
+      background-color: #724b32;
+      color:#FFF;
+    }
+
+    header .avatar {
+      margin-left: 0;
+    }
+
+    header .avatar[src="bubble.webp"] {
+      left: 40vw;
+      bottom: 50%;
+      height: 20vw;
+    }
+    #bubbleBox{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index:10;
     }
 
     @keyframes twinkle {
@@ -48,6 +67,25 @@
       100% {
         background: rgba(255, 255, 255, 0.0);
         transform: scale(1, 1);
+      }
+    }
+
+    @media (min-width:1600px) {
+      header .avatar[src="bubble.webp"] {
+        left: 55vw;
+      }
+    }
+
+    @media (max-aspect-ratio: 1/1) {
+      header .avatar[src="bubble.webp"] {
+        left: 50vw;
+        bottom: 60%;
+        height: 25vw;
+      }
+    }
+    @media (max-width: 1200px) {
+      header .avatar[src="bubble.webp"] {
+        left: 50vw;
       }
     }
   </style>
@@ -77,36 +115,41 @@
       </p>
     </div>
     <div class="t2022 animate__animated animate__fadeIn">leiyi</div>
-    <img class="avatar animate__animated animate__fadeIn" src=avatar.webp />
+    <img class="avatar animate__animated animate__fadeInLeft" src=avatar.webp />
+    <div class="animate__animated animate__fadeInLeft" id="bubbleBox"><img class=" avatar animate__animated animate__pulse animate__infinite animate__slow" src=bubble.webp /></div>
+    
   </header>
   <main>
     <div class="container">
       <figure>
-        <img src="5.webp" alt="5兄弟" />
-        <figcaption>5兄弟</figcaption>
+        <img src="太陽神.webp" alt="太陽神" />
+        <figcaption>太陽神</figcaption>
       </figure>
       <figure>
-        <img src="夏日.webp" alt="夏日玩水" />
-        <figcaption>夏日玩水</figcaption>
+        <img src="黑洞星塵.webp" alt="黑洞星塵" />
+        <figcaption>黑洞星塵</figcaption>
       </figure>
       <figure>
-        <img src="小羅.webp" alt="史萊姆來襲" />
-        <figcaption>史萊姆來襲</figcaption>
+        <img src="Sasharcy.webp" alt="Sasharcy" />
+        <figcaption>Sasharcy</figcaption>
       </figure>
       <figure>
-        <img src="3人2.webp" alt="Top3" />
-        <figcaption>Top 3</figcaption>
+        <img src="無標題270_20221124205231.webp" alt="無標題270_20221124205231" />
+        <figcaption>無標題270_20221124205231</figcaption>
       </figure>
       <figure>
-        <img src="BBQ.webp" alt="BBQ" />
-        <figcaption>BBQ</figcaption>
+        <img src="無標題274_20221115210028.webp" alt="無標題274_20221115210028" />
+        <figcaption>無標題274_20221115210028</figcaption>
       </figure>
       <figure>
-        <img src="hbd2.webp" alt="Happy" />
-        <figcaption>Happy</figcaption>
+        <img src="無標題279_20221113111254.webp" alt="無標題279_20221113111254" />
+        <figcaption>無標題279_20221113111254</figcaption>
       </figure>
-
-      <a class="twitter-timeline" href="https://twitter.com/Tenchiyue?ref_src=twsrc%5Etfw">推文載入中</a>
+      <figure>
+        <img src="無標題282_20221120171820.webp" alt="無標題282_20221120171820" />
+        <figcaption>無標題282_20221120171820</figcaption>
+      </figure>
+      <a class="twitter-timeline" href="https://twitter.com/mizumi_lvyk?ref_src=twsrc%5Etfw">推文載入中</a>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
     </div>
