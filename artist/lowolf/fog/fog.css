@@ -26,6 +26,7 @@ body {
   width: 50%;
   height: 100%;
   float: left;
+  background-size: cover;
 }
 
 #foglayer_02 {
@@ -45,6 +46,7 @@ body {
   width: 50%;
   height: 100%;
   float: left;
+  background-size: cover; 
 }
 
 #foglayer_03 {
@@ -64,13 +66,14 @@ body {
   width: 50%;
   height: 100%;
   float: left;
+  background-size: cover; 
 }
 @media (max-aspect-ratio: 4/3) {
   
 }
 @keyframes foglayer_01_opacity {
   0% {
-    opacity: .7;
+    opacity: .1;
   }
 
   22% {
@@ -82,7 +85,7 @@ body {
   }
 
   58% {
-    opacity: .7;
+    opacity: .6;
   }
 
   80% {
@@ -100,7 +103,7 @@ body {
   }
 
   25% {
-    opacity: .6;
+    opacity: .5;
   }
 
   50% {
@@ -108,11 +111,11 @@ body {
   }
 
   80% {
-    opacity: .5;
+    opacity: .4;
   }
 
   100% {
-    opacity: .7;
+    opacity: .6;
   }
 }
 
@@ -122,19 +125,19 @@ body {
   }
 
   27% {
-    opacity: .7;
+    opacity: .6;
   }
 
   52% {
-    opacity: 1;
+    opacity: .9;
   }
 
   68% {
-    opacity: .8;
+    opacity: .7;
   }
 
   100% {
-    opacity: 6;
+    opacity: 5;
   }
 }
 
