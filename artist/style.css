@@ -138,6 +138,10 @@ color: #1DA1F2;
 text-align: center;
 }
 
+.nsfw {
+   filter: invert(14%) sepia(90%) saturate(6965%) hue-rotate(3deg) brightness(72%) contrast(101%);
+}
+
 @media (max-aspect-ratio: 4/3) {
    header .avatar {
       max-height: 60vh;
