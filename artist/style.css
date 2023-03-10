@@ -146,6 +146,9 @@ text-align: center;
    header .avatar {
       max-height: 60vh;
       object-fit: cover;
+      transform: translate(-50%, 0);
+      left: 50%;
+      margin:0;
    }
 
    #title {
