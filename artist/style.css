@@ -23,7 +23,7 @@ img {
 
 header {
    width: 100%;
-   height: 100vh;
+   height: 100svh;
    position: relative;
    display: flex;
    z-index: 1;
@@ -32,7 +32,7 @@ header {
 
 
 header .avatar {
-   height: 90vh;
+   height: 90svh;
    position: absolute;
    left: 0;
    bottom: 0;
@@ -102,7 +102,7 @@ main {
 }
 
 figure img {
-   max-height: 90vh;
+   max-height: 90svh;
    border-radius: 1.5rem;
    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
@@ -131,11 +131,11 @@ footer a {
    color: #FFF;
 }
 
-.twitter-timeline{
-   display:block;
-text-decoration: none;
-color: #1DA1F2;
-text-align: center;
+.twitter-timeline {
+   display: block;
+   text-decoration: none;
+   color: #1DA1F2;
+   text-align: center;
 }
 
 .nsfw {
@@ -144,11 +144,11 @@ text-align: center;
 
 @media (max-aspect-ratio: 4/3) {
    header .avatar {
-      max-height: 60vh;
+      max-height: 60svh;
       object-fit: cover;
       transform: translate(-50%, 0);
       left: 50%;
-      margin:0;
+      margin: 0;
    }
 
    #title {
@@ -262,3 +262,39 @@ text-align: center;
    transform: translate(-60%, -30%);
 }
 
+/*animation*/
+@keyframes blink {
+   0% {
+      opacity: 1;
+   }
+
+   9% {
+      opacity: 1;
+   }
+
+   10% {
+      opacity: 0;
+   }
+
+   100% {
+      opacity: 0;
+   }
+}
+
+@keyframes blinkReverse {
+   0% {
+      opacity: 0;
+   }
+
+   9% {
+      opacity: 0;
+   }
+
+   10% {
+      opacity: 1;
+   }
+
+   100% {
+      opacity: 1;
+   }
+}

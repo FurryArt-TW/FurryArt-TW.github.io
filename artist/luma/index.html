@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>甜狐 - 台灣獸人繪師作品集</title>
+  <title>Luma - 台灣獸人繪師作品集</title>
   <meta property="og:image" content="avatar.webp">
   <meta property="og:image:type" content="image/png">
-  <meta property="og:title" content="甜狐 - 台灣獸人繪師作品集">
+  <meta property="og:title" content="Luma - 台灣獸人繪師作品集">
   <meta property="og:description" content="台灣獸人繪師作品集">
   <link rel="stylesheet" href="/artist/style.css" type="text/css" media="all" />
   <link rel="stylesheet" href="/animate.min.css">
   <style>
     body {
       background-color: #2f3c70;
+    }
+
+    header .avatar {
+      height: 95svh;
     }
 
     figcaption,
@@ -25,6 +28,14 @@
 
     footer {
       background-color: #231e48;
+    }
+
+    header {
+      background-image: linear-gradient(#03637f, #68d1d4);
+    }
+
+    header img.avatar[src*="eye"] {
+      animation: blinkReverse 3.3s infinite;
     }
   </style>
   <!-- Google tag (gtag.js) -->
@@ -42,43 +53,70 @@
   <header>
     <canvas id="game"></canvas>
     <div id="title" class="animate__animated animate__fadeInRight">
-      <h1 class="animate__animated animate__zoomIn">甜狐</h1>
+      <h1 class="animate__animated animate__zoomIn">Luma</h1>
       <div class="social">
         <a href="https://www.facebook.com/tenjaku0110" target="_blank"><img src="/static/facebook.svg"
             alt="Facebook"></a>
         <a href="https://twitter.com/Tenchiyue" target="_blank"><img src="/static/twitter.svg" alt="Twitter"></a>
         <a href="https://youtube.com/@tenchiyue" target="_blank"><img src="/static/youtube.svg" alt="YouTube"></a>
       </div>
-      <p class="animate__animated animate__fadeIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ex
-        temporibus necessitatibus optio earum pariatur consectetur error, cumque odio voluptatum, numquam voluptatibus
-        qui explicabo veniam laboriosam animi aliquam sequi nemo.
+      <p class="animate__animated animate__fadeIn">喜歡畫圖、玩音遊跟嘗試做獸裝的暹羅貓。<br>
+        頭上藍色蝴蝶是本體。<br>
+        最喜歡大家拿到我圖時候的滿意微笑跟快樂！<br>
+        歡迎找我玩！
       </p>
     </div>
-    <div class="t2022 animate__animated animate__fadeIn">Tenjaku</div>
-    <img class="avatar animate__animated animate__fadeIn" src=avatar.webp />
+    <div class="t2022 animate__animated animate__fadeIn">Luma</div>
+    <img class="avatar animate__animated  animate__infinite" src="avatar/tail.webp" />
+    <img class="avatar animate__animated animate__fadeIn" src="avatar/raisehand.webp" />
+    <img class="avatar animate__animated animate__fadeIn" src="avatar/body.webp" />
+    <img class="avatar animate__animated animate__fadeIn" src="avatar/hand.webp" />
+    <img class="avatar animate__animated animate__fadeIn" src="avatar/lear.webp" />
+    <img class="avatar animate__animated animate__fadeIn" src="avatar/rear.webp" />
+    <img class="avatar animate__animated animate__fadeIn" src="avatar/hair.webp" />
+    <img class="avatar animate__animated animate__fadeIn" src="avatar/eye.webp" />
+
   </header>
   <main>
     <div class="container">
       <figure>
-        <img src="a.webp" alt="a" />
+        <img src="IMG_3036.webp" alt="a" />
         <figcaption>a</figcaption>
       </figure>
       <figure>
-        <img src="b.webp" alt="b" />
+        <img src="IMG_3037.webp" alt="b" />
         <figcaption>b</figcaption>
       </figure>
       <figure>
-        <img src="c.webp" alt="c" />
+        <img src="IMG_3038.webp" alt="c" />
         <figcaption>c</figcaption>
       </figure>
       <figure>
-        <img src="d.webp" alt="d" />
+        <img src="IMG_3039.webp" alt="d" />
         <figcaption>d</figcaption>
       </figure>
       <figure>
-        <img src="e.webp" alt="e" />
+        <img src="IMG_3040.webp" alt="e" />
         <figcaption>e</figcaption>
       </figure>
+      <figure>
+        <img src="IMG_3041.webp" alt="f" />
+        <figcaption>f</figcaption>
+      </figure>
+      <figure>
+        <img src="IMG_3042.webp" alt="g" />
+        <figcaption>g</figcaption>
+      </figure>
+      <figure>
+        <img src="IMG_3043.webp" alt="h" />
+        <figcaption>h</figcaption>
+      </figure>
+      <figure>
+        <img src="IMG_3044.webp" alt="i" />
+        <figcaption>i</figcaption>
+      </figure>
+
+
 
       <a class="twitter-timeline" href="https://twitter.com/Tenchiyue?ref_src=twsrc%5Etfw">推文載入中</a>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
