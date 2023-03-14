@@ -23,6 +23,7 @@ img {
 
 header {
    width: 100%;
+   height: 100vh;
    height: 100svh;
    position: relative;
    display: flex;
@@ -32,6 +33,7 @@ header {
 
 
 header .avatar {
+   height: 90vh;
    height: 90svh;
    position: absolute;
    left: 0;
@@ -102,7 +104,8 @@ main {
 }
 
 figure img {
-   max-height: 90svh;
+   max-height: 80vh;
+   max-height: 80svh;
    border-radius: 1.5rem;
    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
@@ -144,6 +147,7 @@ footer a {
 
 @media (max-aspect-ratio: 4/3) {
    header .avatar {
+      max-height: 60vh;
       max-height: 60svh;
       object-fit: cover;
       transform: translate(-50%, 0);

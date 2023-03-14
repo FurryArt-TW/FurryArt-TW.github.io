@@ -12,16 +12,19 @@
   <link rel="stylesheet" href="/artist/style.css" type="text/css" media="all" />
   <link rel="stylesheet" href="/animate.min.css">
   <style>
+    :root{
+      --hi: 95svh;
+    }
     body {
       background-color: #2f3c70;
     }
 
     header .avatar {
-      height: 95svh;
+      height: var(--hi);
     }
 
     figcaption,
-    footer,
+    footer, 
     footer a {
       color: #FFF;
     }
@@ -36,6 +39,20 @@
 
     header img.avatar[src*="eye"] {
       animation: blinkReverse 3.3s infinite;
+      height: calc(var(--hi) * .045 );
+      bottom: calc(var(--hi) * .65);
+      display:block;
+    }
+    header img.avatar[src*="luma"]{
+display: block;
+    }
+    header img.avatar{
+      display:none;
+    }
+    @media (max-aspect-ratio: 4 / 3){
+      :root{
+      --hi: 65svh;
+    }
     }
   </style>
   <!-- Google tag (gtag.js) -->
@@ -67,6 +84,7 @@
       </p>
     </div>
     <div class="t2022 animate__animated animate__fadeIn">Luma</div>
+    <img class="avatar animate__animated  animate__infinite" src="avatar/luma.png" />
     <img class="avatar animate__animated  animate__infinite" src="avatar/tail.webp" />
     <img class="avatar animate__animated animate__fadeIn" src="avatar/raisehand.webp" />
     <img class="avatar animate__animated animate__fadeIn" src="avatar/body.webp" />
