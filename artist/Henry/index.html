@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小雨 - 台灣獸人繪師作品集</title>
+  <meta property="og:image" content="avatar.webp">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:title" content="甜狐 - 台灣獸人繪師作品集">
+  <meta property="og:description" content="台灣獸人繪師作品集">
+  <link rel="stylesheet" href="/artist/style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="/animate.min.css">
+  <style>
+    body {
+      background-color: #ffe7ab;
+    }
+    header{
+      background-color: #b0c8ec;
+    }
+    figcaption,
+    footer,
+    footer a {
+      color: #FFF;
+      
+    }
+    footer{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:1rem;
+    }
+    footer img{
+      height:4rem;
+    }
+    header .avatar {
+      height: 80%;
+      margin-bottom: 1rem;
+    }
+    footer>*{
+      display:block;
+    }
+    footer {
+      background-color: #b0c8ec;
+    }
+    @media (max-aspect-ratio: 4/3) {
+      header .avatar {
+        height: 50%;
+      }
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0RBSRK7J29"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-0RBSRK7J29');
+  </script>
+</head>
+<body>
+  <header>
+    <div id="title" class="animate__animated animate__fadeInRight">
+      <h1 class="animate__animated animate__zoomIn">小雨</h1>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=100017531921560" target="_blank"><img src="/static/facebook.svg"
+            alt="Facebook"></a>
+        <a href="https://twitter.com/Henry3376" target="_blank"><img src="/static/twitter.svg" alt="Twitter"></a>
+        <a href="https://www.instagram.com/henry33765216/" target="_blank"><img src="/static/instagram.svg" alt="instagram"></a>
+      </div>
+      <p class="animate__animated animate__fadeIn">您們好呀! 我是小雨 ( Henry ) <br>
+        我是一名小型的日更繪師^^<br>
+        這裡每天分享一位朋友還有一種顏色<br>
+        希望能每天在生活中增加一個顏色嗎!?<br>
+        那就關注我的平台來認識大家吧😊
+      </p>
+    </div>
+    <div class="t2022 animate__animated animate__fadeIn">Tenjaku</div>
+    <img class="avatar animate__animated animate__fadeIn" src=avatar.webp />
+  </header>
+  <main>
+    <div class="container">
+      <figure>
+        <img src="日更繪圖輯.webp" alt="日更繪圖輯" />
+        <figcaption>日更繪圖輯</figcaption>
+      </figure>
+      <figure>
+        <img src="兔年快樂.webp" alt="兔年快樂" />
+        <figcaption>兔年快樂</figcaption>
+      </figure>
+      <figure>
+        <img src="貼圖繪製.webp" alt="貼圖繪製" />
+        <figcaption>貼圖繪製</figcaption>
+      </figure>
+      <figure>
+        <img src="極簡封面繪製.webp" alt="極簡封面繪製" />
+        <figcaption>極簡封面繪製</figcaption>
+      </figure>
+
+      <a class="twitter-timeline" href="https://twitter.com/Henry3376?ref_src=twsrc%5Etfw">推文載入中</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    </div>
+  </main>
+  <footer><div>Furry Art in Taiwan © 2023<br>
+    <a href="https://github.com/furryart-tw">Github</a> · <a
+      href="https://www.facebook.com/media/set/?set=a.184623570905984">Facebook</a></div>
+      <img src="頭像.webp" alt="">
+  </footer>
+  <div id="menu">
+    <div id="menu-bar" onclick="menuOnClick()">
+      <div id="bar1" class="bar"></div>
+      <div id="bar2" class="bar"></div>
+      <div id="bar3" class="bar"></div>
+    </div>
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="#">台灣獸人繪師作品集</a></li>
+        <li><a href="#">購買周邊</a></li>
+        <li><a href="#">上一位</a></li>
+        <li><a href="#">下一位</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="menu-bg" id="menu-bg"></div>
+  <script>
+    // Burger Menu
+    function menuOnClick() {
+      document.getElementById("menu-bar").classList.toggle("change");
+      document.getElementById("nav").classList.toggle("change");
+      document.getElementById("menu-bg").classList.toggle("change-bg");
+    }
+  </script>
+
+</body>
+
+</html>
