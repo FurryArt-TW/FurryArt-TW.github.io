@@ -26,7 +26,6 @@ header {
    height: 100vh;
    height: 100svh;
    position: relative;
-   display: flex;
    z-index: 1;
    overflow: hidden;
 }
@@ -40,6 +39,9 @@ header .avatar {
    bottom: 0;
    z-index: 4;
    margin-left: 5%;
+   max-width: 45%;
+   object-fit: contain;
+   object-position: bottom;
 }
 
 #title {
@@ -55,7 +57,7 @@ header .avatar {
 }
 
 h1 {
-   font-size: 5em;
+   font-size: 5rem;
    max-width: 40vw;
    word-wrap: break-word;
    word-break: break-all;
@@ -63,6 +65,11 @@ h1 {
    margin-bottom: 0;
    line-height: 1;
    margin-bottom: 10px;
+}
+
+h1>span {
+   font-size: 3rem;
+   margin-left:1rem;
 }
 
 .t2022 {
@@ -153,6 +160,7 @@ footer a {
       transform: translate(-50%, 0);
       left: 50%;
       margin: 0;
+      max-width: 100%;
    }
 
    #title {
@@ -165,7 +173,11 @@ footer a {
 
    h1 {
       max-width: 80%;
-      font-size: 2.5em;
+      font-size: 2.5rem;
+   }
+
+   h1>span {
+      font-size: 1.5rem;
    }
 }
 

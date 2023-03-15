@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>楓不轉陸轉 - 台灣獸人繪師作品集</title>
+  <meta property="og:image" content="avatar.webp">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:title" content="楓不轉陸轉 - 台灣獸人繪師作品集">
+  <meta property="og:description" content="台灣獸人繪師作品集">
+  <link rel="stylesheet" href="/artist/style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="/animate.min.css">
+  <style>
+    body {
+      background-color: #C1E4E1;
+    }
+
+    header .avatar {
+      margin-bottom: calc(1rem + 20vh);
+    }
+
+    header {
+      color: #805124;
+    }
+
+    #title {}
+
+    .testA {
+      position: absolute;
+      transform: translate(0, -50%);
+      right: 0;
+      top: 50%;
+      width: 45%;
+      height:200px;
+      background-color: red;
+    }
+
+    #title p {
+      color: #623d1e;
+    }
+
+    header .social a img {
+      filter: invert(45%) sepia(43%) saturate(391%) hue-rotate(187deg) brightness(90%) contrast(88%);
+    }
+
+    .marquee {
+      height: 20%;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #e6eff4;
+    }
+
+    figcaption,
+    footer,
+    footer a {
+      color: #9b6b35;
+    }
+
+    footer {
+      background-color: #231e48;
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0RBSRK7J29"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-0RBSRK7J29');
+  </script>
+</head>
+
+<body>
+  <header>
+    <div id="title" class="animate__animated animate__fadeInRight">
+      <h1 class="animate__animated animate__zoomIn">楓<span>楓不轉陸轉</span></h1>
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=100008200985122" target="_blank"><img
+            src="/static/facebook.svg" alt="Facebook"></a>
+      </div>
+      <p class="animate__animated animate__fadeIn">只要我偽裝的夠好就沒人會發現我只是隻會嗷嗷叫的大狗勾 <br>
+        我是楓一個菜皮八繪師上路中，很高興認識大家 <br>
+        想認識或蕉流都可以來戳我歐!我不會咬人所以不用害怕 <br>
+        金主爸爸你別怕你的委託我在畫，想委託的也都可以來問問看歐 xwx
+      </p>
+    </div>
+    <div class="t2022 animate__animated animate__fadeIn">楓</div>
+    <img class="avatar animate__animated animate__fadeIn" src=avatar.webp />
+    <div class="marquee"></div>
+    <div class="test"></div>
+  </header>
+  <main>
+    <div class="container">
+      <figure>
+        <img src="a.webp" alt="a" />
+        <figcaption>a</figcaption>
+      </figure>
+      <figure>
+        <img src="b.webp" alt="b" />
+        <figcaption>b</figcaption>
+      </figure>
+      <figure>
+        <img src="c.webp" alt="c" />
+        <figcaption>c</figcaption>
+      </figure>
+      <figure>
+        <img src="d.webp" alt="d" />
+        <figcaption>d</figcaption>
+      </figure>
+      <figure>
+        <img src="e.webp" alt="e" />
+        <figcaption>e</figcaption>
+      </figure>
+
+      <a class="twitter-timeline" href="https://twitter.com/Tenchiyue?ref_src=twsrc%5Etfw">推文載入中</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    </div>
+  </main>
+  <footer>Furry Art in Taiwan © 2023<br>
+    <a href="https://github.com/furryart-tw">Github</a> · <a
+      href="https://www.facebook.com/media/set/?set=a.184623570905984">Facebook</a>
+  </footer>
+  <div id="menu">
+    <div id="menu-bar" onclick="menuOnClick()">
+      <div id="bar1" class="bar"></div>
+      <div id="bar2" class="bar"></div>
+      <div id="bar3" class="bar"></div>
+    </div>
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="#">台灣獸人繪師作品集</a></li>
+        <li><a href="#">購買周邊</a></li>
+        <li><a href="#">上一位</a></li>
+        <li><a href="#">下一位</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="menu-bg" id="menu-bg"></div>
+  <script>
+    // Burger Menu
+    function menuOnClick() {
+      document.getElementById("menu-bar").classList.toggle("change");
+      document.getElementById("nav").classList.toggle("change");
+      document.getElementById("menu-bg").classList.toggle("change-bg");
+    }
+  </script>
+
+</body>
+
+</html>

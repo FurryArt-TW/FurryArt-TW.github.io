@@ -12,7 +12,7 @@
   <meta property="og:description" content="台灣獸人繪師作品集">
   <link rel="stylesheet" href="/artist/style.css" type="text/css" media="all" />
   <link rel="stylesheet" href="/animate.min.css">
-  <style> 
+  <style>
     body {
       background-color: #FFF8C3;
     }
@@ -61,6 +61,17 @@
     }
   </style>
   <style>
+    @media (max-aspect-ratio: 4/3) {
+      header .avatar {
+        left: 0vh;
+        bottom: 0vh;
+      }
+
+      header .body {
+        transform: translate(0, 0);
+      }
+    }
+
     @media (min-aspect-ratio: 4/3) {
       figure img {
         height: 80%;
@@ -268,7 +279,7 @@
       </p>
     </div>
     <div class="t2022 animate__animated animate__pulse">KIGI</div>
-    <div class="kigi"> <img class="avatar" src=avatar/body.webp />
+    <div class="kigi"> <img class="avatar body" src=avatar/body.webp />
       <img class="avatar ud " src=avatar/feet.webp />
       <img class="avatar ud" src=avatar/head.webp />
       <img class="avatar hands l" src=avatar/hand-l.webp />
