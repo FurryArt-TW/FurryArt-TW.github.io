@@ -19,22 +19,16 @@
 
     header .avatar {
       margin-bottom: calc(1rem + 20vh);
+      margin-bottom: calc(1rem + 20svh);
     }
 
     header {
       color: #805124;
     }
 
-    #title {}
-
-    .testA {
-      position: absolute;
-      transform: translate(0, -50%);
-      right: 0;
-      top: 50%;
-      width: 45%;
-      height:200px;
-      background-color: red;
+    #title {
+      top: calc(50% - 20vh);
+      top: calc(50% - 20svh);
     }
 
     #title p {
@@ -46,12 +40,24 @@
     }
 
     .marquee {
-      height: 20%;
-      width: 100%;
+      height: 20vh;
+      height: 20svh;
+      width: 500%;
       position: absolute;
       bottom: 0;
       left: 0;
       background-color: #e6eff4;
+    }
+
+    .marqueeBox {
+      display: inline-block;
+      height: 100%;
+      animation: marquee 10s linear infinite;
+      transform: translateX(100vw);
+    }
+
+    .marquee img {
+      height: 100%;
     }
 
     figcaption,
@@ -62,6 +68,27 @@
 
     footer {
       background-color: #231e48;
+    }
+
+    @media (max-aspect-ratio: 4/3) {
+      #title {
+        top: 0;
+      }
+
+      header {
+        height: 120vh;
+        height: 120svh;
+      }
+    }
+
+    @keyframes marqueea {
+      0% {
+        transform: translateX(100vw);
+      }
+
+      100% {
+        transform: translateX(calc(0 - 100vw / 5 * 7));
+      }
     }
   </style>
   <!-- Google tag (gtag.js) -->
@@ -91,35 +118,31 @@
     </div>
     <div class="t2022 animate__animated animate__fadeIn">楓</div>
     <img class="avatar animate__animated animate__fadeIn" src=avatar.webp />
-    <div class="marquee"></div>
-    <div class="test"></div>
+    <div class="marquee">
+    </div>
   </header>
   <main>
     <div class="container">
       <figure>
-        <img src="a.webp" alt="a" />
-        <figcaption>a</figcaption>
+        <img src="2022獸無限多元宇宙名牌.webp" alt="2022獸無限多元宇宙名牌" />
+        <figcaption>2022獸無限多元宇宙名牌</figcaption>
       </figure>
       <figure>
-        <img src="b.webp" alt="b" />
-        <figcaption>b</figcaption>
+        <img src="背景練習.webp" alt="背景練習" />
+        <figcaption>背景練習</figcaption>
       </figure>
       <figure>
-        <img src="c.webp" alt="c" />
-        <figcaption>c</figcaption>
+        <img src="貼貼.webp" alt="貼貼" />
+        <figcaption>貼貼</figcaption>
       </figure>
       <figure>
-        <img src="d.webp" alt="d" />
-        <figcaption>d</figcaption>
+        <img src="貼貼2.webp" alt="貼貼2" />
+        <figcaption>貼貼2</figcaption>
       </figure>
       <figure>
-        <img src="e.webp" alt="e" />
-        <figcaption>e</figcaption>
+        <img src="oc.webp" alt="oc" />
+        <figcaption>oc</figcaption>
       </figure>
-
-      <a class="twitter-timeline" href="https://twitter.com/Tenchiyue?ref_src=twsrc%5Etfw">推文載入中</a>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
     </div>
   </main>
   <footer>Furry Art in Taiwan © 2023<br>
@@ -150,6 +173,15 @@
       document.getElementById("nav").classList.toggle("change");
       document.getElementById("menu-bg").classList.toggle("change-bg");
     }
+    var marquee = document.querySelector('.marquee');
+    function newMaquee() {
+      marquee.insertAdjacentHTML('beforeend', '<div class="marqueeBox"><img src="貼圖/吶喊.webp" alt="吶喊"><img src="貼圖/屬去.webp" alt="吶喊"><img src="貼圖/快跑.webp" alt="吶喊"><img src="貼圖/抱抱.webp" alt="吶喊"><img src="貼圖/炸毛.webp" alt="吶喊"><img src="貼圖/睡覺.webp" alt="吶喊"><img src="貼圖/錢包.webp" alt="吶喊"></div>')
+    }
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    var maqueeWidth = height / 5 * 7;
+    var loopTime = 10 / (width / maqueeWidth) * 1000;
+    setInterval(newMaquee, loopTime);
   </script>
 
 </body>
