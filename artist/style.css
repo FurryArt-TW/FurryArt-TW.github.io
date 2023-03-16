@@ -81,7 +81,7 @@ h1>span {
    font-size: 7em;
    z-index: 5;
    --animate-delay: 2s;
-   font-family: monospace;
+   font-family: 'Noto Sans TC', sans-serif;
    opacity: 0.6;
 }
 
