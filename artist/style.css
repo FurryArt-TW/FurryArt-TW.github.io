@@ -79,7 +79,7 @@ h1>span {
    right: 0;
    top: 0;
    font-size: 7em;
-   z-index: 5;
+   z-index: 2;
    --animate-delay: 2s;
    font-family: 'Noto Sans TC', sans-serif;
    opacity: 0.6;
@@ -160,8 +160,8 @@ footer a {
    }
 
    #title {
-      left: 1em;
-      top: 1em;
+      left: 0;
+      top: 0;
       width: 100%;
       align-items: start;
       display: block;

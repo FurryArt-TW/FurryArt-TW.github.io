@@ -14,15 +14,16 @@
   <link rel="stylesheet" href="/animate.min.css">
   <style>
     body {
-     background-color: #cadde9;
+      background-color: #cadde9;
     }
 
     header .avatar {
       margin-bottom: calc(1rem + 20vh);
       margin-bottom: calc(1rem + 20svh);
     }
-    .t2022{
-      color:#e8efee73;
+
+    .t2022 {
+      color: #e8efee73;
     }
 
     header {
@@ -65,9 +66,10 @@
       animation: rotate 2s linear infinite;
     }
 
-    figcaption{
-      color:#9b6b35
+    figcaption {
+      color: #9b6b35
     }
+
     footer,
     footer a {
       color: #f6f8f7;
@@ -76,8 +78,9 @@
     footer {
       background-color: #6b98ae;
     }
-    h1>span{
-      margin:0;
+
+    h1>span {
+      margin: 0;
     }
 
     @media (max-aspect-ratio: 4/3) {
@@ -100,13 +103,16 @@
         left: -140svh;
       }
     }
+
     @keyframes rotate {
       0% {
         transform: rotate(30deg);
       }
+
       50% {
         transform: rotate(-30deg);
       }
+
       100% {
         transform: rotate(30deg);
       }
@@ -170,30 +176,7 @@
     <a href="https://github.com/furryart-tw">Github</a> · <a
       href="https://www.facebook.com/media/set/?set=a.184623570905984">Facebook</a>
   </footer>
-  <div id="menu">
-    <div id="menu-bar" onclick="menuOnClick()">
-      <div id="bar1" class="bar"></div>
-      <div id="bar2" class="bar"></div>
-      <div id="bar3" class="bar"></div>
-    </div>
-    <nav class="nav" id="nav">
-      <ul>
-        <li><a href="#">台灣獸人繪師作品集</a></li>
-        <li><a href="#">購買周邊</a></li>
-        <li><a href="#">上一位</a></li>
-        <li><a href="#">下一位</a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <div class="menu-bg" id="menu-bg"></div>
   <script>
-    // Burger Menu
-    function menuOnClick() {
-      document.getElementById("menu-bar").classList.toggle("change");
-      document.getElementById("nav").classList.toggle("change");
-      document.getElementById("menu-bg").classList.toggle("change-bg");
-    }
     const marquee = document.querySelector('.marquee');
     function newMaquee() {
       var marqueeBox = document.createElement('div');
