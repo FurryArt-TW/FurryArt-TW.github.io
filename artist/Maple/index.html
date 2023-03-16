@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="/animate.min.css">
   <style>
     body {
-      background-color: #C1E4E1;
+     background-color: #cadde9;
     }
 
     header .avatar {
@@ -24,6 +24,7 @@
 
     header {
       color: #805124;
+      background-color: #C1E4E1;
     }
 
     #title {
@@ -50,24 +51,27 @@
     }
 
     .marqueeBox {
-      display: inline-block;
+      display: block;
       height: 100%;
-      animation: marquee 10s linear infinite;
-      transform: translateX(100vw);
+      animation: marquee 10s linear;
+      position: absolute;
     }
 
     .marquee img {
       height: 100%;
+      animation: rotate 2s linear infinite;
     }
 
-    figcaption,
+    figcaption{
+      color:#9b6b35
+    }
     footer,
     footer a {
-      color: #9b6b35;
+      color: #f6f8f7;
     }
 
     footer {
-      background-color: #231e48;
+      background-color: #6b98ae;
     }
 
     @media (max-aspect-ratio: 4/3) {
@@ -81,13 +85,24 @@
       }
     }
 
-    @keyframes marqueea {
+    @keyframes marquee {
       0% {
-        transform: translateX(100vw);
+        left: 100vw;
       }
 
       100% {
-        transform: translateX(calc(0 - 100vw / 5 * 7));
+        left: -140svh;
+      }
+    }
+    @keyframes rotate {
+      0% {
+        transform: rotate(30deg);
+      }
+      50% {
+        transform: rotate(-30deg);
+      }
+      100% {
+        transform: rotate(30deg);
       }
     }
   </style>
@@ -117,7 +132,7 @@
       </p>
     </div>
     <div class="t2022 animate__animated animate__fadeIn">楓</div>
-    <img class="avatar animate__animated animate__fadeIn" src=avatar.webp />
+    <img class="avatar animate__animated animate__fadeInLeftBig" src=avatar.webp />
     <div class="marquee">
     </div>
   </header>
@@ -173,14 +188,21 @@
       document.getElementById("nav").classList.toggle("change");
       document.getElementById("menu-bg").classList.toggle("change-bg");
     }
-    var marquee = document.querySelector('.marquee');
+    const marquee = document.querySelector('.marquee');
     function newMaquee() {
-      marquee.insertAdjacentHTML('beforeend', '<div class="marqueeBox"><img src="貼圖/吶喊.webp" alt="吶喊"><img src="貼圖/屬去.webp" alt="吶喊"><img src="貼圖/快跑.webp" alt="吶喊"><img src="貼圖/抱抱.webp" alt="吶喊"><img src="貼圖/炸毛.webp" alt="吶喊"><img src="貼圖/睡覺.webp" alt="吶喊"><img src="貼圖/錢包.webp" alt="吶喊"></div>')
+      var marqueeBox = document.createElement('div');
+      marqueeBox.className = 'marqueeBox';
+      marqueeBox.innerHTML = '<img src="貼圖/吶喊.webp" alt="吶喊"><img src="貼圖/屬去.webp" alt="屬去"><img src="貼圖/快跑.webp" alt="快跑"><img src="貼圖/抱抱.webp" alt="抱抱"><img src="貼圖/炸毛.webp" alt="炸毛"><img src="貼圖/睡覺.webp" alt="睡覺"><img src="貼圖/錢包.webp" alt="錢包">';
+      marquee.appendChild(marqueeBox);
+      setTimeout(() => {
+        marquee.removeChild(marqueeBox);
+      }, 10000);
     }
+
     var width = window.innerWidth;
     var height = window.innerHeight;
-    var maqueeWidth = height / 5 * 7;
-    var loopTime = 10 / (width / maqueeWidth) * 1000;
+    var loopTime = height * 1.4 / (1.4 * height + width) * 10000;
+    newMaquee();
     setInterval(newMaquee, loopTime);
   </script>
 
