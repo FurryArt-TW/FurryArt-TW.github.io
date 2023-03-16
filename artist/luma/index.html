@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,9 +13,10 @@
   <link rel="stylesheet" href="/artist/style.css" type="text/css" media="all" />
   <link rel="stylesheet" href="/animate.min.css">
   <style>
-    :root{
+    :root {
       --hi: 95svh;
     }
+
     body {
       background-color: #2f3c70;
     }
@@ -24,7 +26,7 @@
     }
 
     figcaption,
-    footer, 
+    footer,
     footer a {
       color: #FFF;
     }
@@ -37,22 +39,67 @@
       background-image: linear-gradient(#03637f, #68d1d4);
     }
 
+    header img.avatar {
+      display: none;
+    }
+
     header img.avatar[src*="eye"] {
       animation: blinkReverse 3.3s infinite;
-      height: calc(var(--hi) * .045 );
-      bottom: calc(var(--hi) * .65);
-      display:block;
+      height: calc(var(--hi) * .043);
+      bottom: calc(var(--hi) * .7185);
+      left: calc(var(--hi) * .393);
+      display: block;
     }
-    header img.avatar[src*="luma"]{
-display: block;
+
+    header img.avatar[src*="tail"] {
+      height: calc(var(--hi) * .36);
+      bottom: calc(var(--hi) * .307);
+      left: calc(var(--hi) * .003);
+      display: block;
     }
-    header img.avatar{
-      display:none;
+
+    header img.avatar[src*="hand"] {
+      height: calc(var(--hi) * .235);
+      bottom: calc(var(--hi) * .3889);
+      left: calc(var(--hi) * .2363);
+      display: block;
     }
-    @media (max-aspect-ratio: 4 / 3){
-      :root{
-      --hi: 65svh;
+
+    header img.avatar[src*="lear.webp"] {
+      height: calc(var(--hi) * .162);
+      bottom: calc(var(--hi) * .7795) ;
+      left: calc(var(--hi) * .22);
+      display: block;
     }
+    header img.avatar[src*="rear.webp"] {
+      height: calc(var(--hi) * .162);
+      bottom: calc(var(--hi) * .7795) ;
+      left: calc(var(--hi) * .22);
+      display: block;
+    }
+
+    header img.avatar[src*="raisehand"] {
+      height: calc(var(--hi) * .256);
+      bottom: calc(var(--hi) * .599);
+      left: calc(var(--hi) * .376);
+      display: block;
+    }
+
+    header img.avatar[src*="tail"] {
+      height: calc(var(--hi) * .36);
+      bottom: calc(var(--hi) * .307);
+      left: calc(var(--hi) * .003);
+      display: block;
+    }
+
+    header img.avatar[src*="luma"] {
+      display: block;
+    }
+
+    @media (max-aspect-ratio: 4 / 3) {
+      :root {
+        --hi: 65svh;
+      }
     }
   </style>
   <!-- Google tag (gtag.js) -->
@@ -68,12 +115,11 @@ display: block;
 
 <body>
   <header>
-    <canvas id="game"></canvas>
     <div id="title" class="animate__animated animate__fadeInRight">
       <h1 class="animate__animated animate__zoomIn">Luma</h1>
       <div class="social">
-        <a href="https://www.facebook.com/profile.php?id=100085083165203" target="_blank"><img src="/static/facebook.svg"
-            alt="Facebook"></a>
+        <a href="https://www.facebook.com/profile.php?id=100085083165203" target="_blank"><img
+            src="/static/facebook.svg" alt="Facebook"></a>
         <a href="https://twitter.com/Tenchiyue" target="_blank"><img src="/static/twitter.svg" alt="Twitter"></a>
         <a href="https://youtube.com/@tenchiyue" target="_blank"><img src="/static/youtube.svg" alt="YouTube"></a>
       </div>
@@ -83,7 +129,7 @@ display: block;
         歡迎找我玩！
       </p>
     </div>
-    <div class="t2022 animate__animated animate__fadeIn">Luma</div>
+    <div class="t2022 animate__animated">Luma</div>
     <img class="avatar animate__animated  animate__infinite" src="avatar/luma.png" />
     <img class="avatar animate__animated  animate__infinite" src="avatar/tail.webp" />
     <img class="avatar animate__animated animate__fadeIn" src="avatar/raisehand.webp" />
