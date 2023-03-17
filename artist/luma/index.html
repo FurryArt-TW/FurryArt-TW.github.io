@@ -18,11 +18,23 @@
     }
 
     body {
-      background-color: #2f3c70;
+      background-color: #68d1d4;
     }
 
     header .avatar {
       height: var(--hi);
+    }
+
+    header #title img {
+      filter: invert(60%) sepia(62%) saturate(1679%) hue-rotate(186deg) brightness(92%) contrast(86%);
+    }
+
+    h1 {
+      color: #202d69;
+    }
+
+    #title {
+      color: #121b43;
     }
 
     figcaption,
@@ -32,15 +44,11 @@
     }
 
     footer {
-      background-color: #231e48;
+      background-color: #31a8af;
     }
 
     header {
       background-image: linear-gradient(#03637f, #68d1d4);
-    }
-
-    header img.avatar {
-      display: none;
     }
 
     header img.avatar[src*="eye"] {
@@ -48,57 +56,119 @@
       height: calc(var(--hi) * .043);
       bottom: calc(var(--hi) * .7185);
       left: calc(var(--hi) * .393);
-      display: block;
     }
 
     header img.avatar[src*="tail"] {
       height: calc(var(--hi) * .36);
       bottom: calc(var(--hi) * .307);
-      left: calc(var(--hi) * .003);
-      display: block;
+      left: calc(var(--hi) * .01);
+      animation: tail 5s infinite;
     }
 
     header img.avatar[src*="hand"] {
-      height: calc(var(--hi) * .235);
-      bottom: calc(var(--hi) * .3889);
-      left: calc(var(--hi) * .2363);
-      display: block;
+      height: calc(var(--hi) * .137);
+      bottom: calc(var(--hi) * .389);
+      left: calc(var(--hi) * .239);
+      animation: rotateHand 3s infinite;
     }
 
     header img.avatar[src*="lear.webp"] {
       height: calc(var(--hi) * .162);
-      bottom: calc(var(--hi) * .7795) ;
+      bottom: calc(var(--hi) * .7795);
       left: calc(var(--hi) * .22);
-      display: block;
+      animation: ear 3s infinite;
     }
+
     header img.avatar[src*="rear.webp"] {
-      height: calc(var(--hi) * .162);
-      bottom: calc(var(--hi) * .7795) ;
-      left: calc(var(--hi) * .22);
-      display: block;
+      height: calc(var(--hi) * .142);
+      bottom: calc(var(--hi) * .79);
+      left: calc(var(--hi) * .352);
+      animation: ear 3s infinite;
     }
 
     header img.avatar[src*="raisehand"] {
       height: calc(var(--hi) * .256);
       bottom: calc(var(--hi) * .599);
       left: calc(var(--hi) * .376);
-      display: block;
+      animation: rotateRaiseHand 2s infinite;
     }
 
-    header img.avatar[src*="tail"] {
-      height: calc(var(--hi) * .36);
-      bottom: calc(var(--hi) * .307);
-      left: calc(var(--hi) * .003);
-      display: block;
+    header img.avatar[src*="hair"] {
+      height: calc(var(--hi) * .11);
+      bottom: calc(var(--hi) * .782);
+      left: calc(var(--hi) * .327);
+    }
+
+    header img.avatar[src*="body"] {
+      height: calc(var(--hi) * .839);
+      bottom: calc(var(--hi) * .037);
+      left: calc(var(--hi) * .167);
     }
 
     header img.avatar[src*="luma"] {
-      display: block;
+      display: none;
     }
+
 
     @media (max-aspect-ratio: 4 / 3) {
       :root {
         --hi: 65svh;
+      }
+    }
+
+    @keyframes ear {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      50% {
+        transform: rotate(5deg);
+      }
+
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+
+    @keyframes rotateRaiseHand {
+      0% {
+        transform: rotate(0deg) translateX(0);
+      }
+
+      50% {
+        transform: rotate(20deg) translateX(calc(var(--hi) * .05));
+      }
+
+      100% {
+        transform: rotate(0deg) translateX(0);
+      }
+    }
+
+    @keyframes rotateHand {
+      0% {
+        transform: rotate(-3deg) translate(0, 0);
+      }
+
+      50% {
+        transform: rotate(-20deg) translate(calc(var(--hi) * .015), calc(var(--hi) * -0.01));
+      }
+
+      100% {
+        transform: rotate(-3deg) translate(0, 0);
+      }
+    }
+
+    @keyframes tail {
+      0% {
+        transform: rotate(30deg) translate(0);
+      }
+
+      50% {
+        transform: rotate(-30deg) translate(calc(var(--hi) * .01), calc(var(--hi) * .1));
+      }
+
+      100% {
+        transform: rotate(30deg) translate(0);
       }
     }
   </style>
@@ -120,8 +190,6 @@
       <div class="social">
         <a href="https://www.facebook.com/profile.php?id=100085083165203" target="_blank"><img
             src="/static/facebook.svg" alt="Facebook"></a>
-        <a href="https://twitter.com/Tenchiyue" target="_blank"><img src="/static/twitter.svg" alt="Twitter"></a>
-        <a href="https://youtube.com/@tenchiyue" target="_blank"><img src="/static/youtube.svg" alt="YouTube"></a>
       </div>
       <p class="animate__animated animate__fadeIn">喜歡畫圖、玩音遊跟嘗試做獸裝的暹羅貓。<br>
         頭上藍色蝴蝶是本體。<br>
@@ -130,7 +198,6 @@
       </p>
     </div>
     <div class="t2022 animate__animated">Luma</div>
-    <img class="avatar animate__animated  animate__infinite" src="avatar/luma.png" />
     <img class="avatar animate__animated  animate__infinite" src="avatar/tail.webp" />
     <img class="avatar animate__animated animate__fadeIn" src="avatar/raisehand.webp" />
     <img class="avatar animate__animated animate__fadeIn" src="avatar/body.webp" />
@@ -145,78 +212,31 @@
     <div class="container">
       <figure>
         <img src="IMG_3036.webp" alt="a" />
-        <figcaption>a</figcaption>
       </figure>
       <figure>
         <img src="IMG_3037.webp" alt="b" />
-        <figcaption>b</figcaption>
       </figure>
       <figure>
-        <img src="IMG_3038.webp" alt="c" />
-        <figcaption>c</figcaption>
-      </figure>
-      <figure>
-        <img src="IMG_3039.webp" alt="d" />
-        <figcaption>d</figcaption>
-      </figure>
-      <figure>
-        <img src="IMG_3040.webp" alt="e" />
-        <figcaption>e</figcaption>
+        <img src="IMG_3039.webp" alt="c" />
       </figure>
       <figure>
         <img src="IMG_3041.webp" alt="f" />
-        <figcaption>f</figcaption>
       </figure>
       <figure>
         <img src="IMG_3042.webp" alt="g" />
-        <figcaption>g</figcaption>
       </figure>
       <figure>
         <img src="IMG_3043.webp" alt="h" />
-        <figcaption>h</figcaption>
       </figure>
       <figure>
         <img src="IMG_3044.webp" alt="i" />
-        <figcaption>i</figcaption>
       </figure>
-
-
-
-      <a class="twitter-timeline" href="https://twitter.com/Tenchiyue?ref_src=twsrc%5Etfw">推文載入中</a>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
     </div>
   </main>
   <footer>Furry Art in Taiwan © 2023<br>
     <a href="https://github.com/furryart-tw">Github</a> · <a
       href="https://www.facebook.com/media/set/?set=a.184623570905984">Facebook</a>
   </footer>
-  <div id="menu">
-    <div id="menu-bar" onclick="menuOnClick()">
-      <div id="bar1" class="bar"></div>
-      <div id="bar2" class="bar"></div>
-      <div id="bar3" class="bar"></div>
-    </div>
-    <nav class="nav" id="nav">
-      <ul>
-        <li><a href="#">台灣獸人繪師作品集</a></li>
-        <li><a href="#">購買周邊</a></li>
-        <li><a href="#">上一位</a></li>
-        <li><a href="#">下一位</a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <div class="menu-bg" id="menu-bg"></div>
-  <script>
-    // Burger Menu
-    function menuOnClick() {
-      document.getElementById("menu-bar").classList.toggle("change");
-      document.getElementById("nav").classList.toggle("change");
-      document.getElementById("menu-bg").classList.toggle("change-bg");
-    }
-  </script>
-
 </body>
 
 </html>
