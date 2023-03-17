@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>伊秋 Ichu - 台灣獸人繪師作品集</title>
+  <meta property="og:image" content="avatar.webp">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:title" content="伊秋 Ichu - 台灣獸人繪師作品集">
+  <meta property="og:description" content="台灣獸人繪師作品集">
+  <link rel="stylesheet" href="/artist/style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="/animate.min.css">
+  <style>
+    body {
+      background-color: #f9efc7;
+    }
+h1{
+  color:#8a5113;
+}
+header p{
+  color:#6a3d11;
+}
+header #title img[alt*="Facebook"],header #title img[alt*="Pixiv"],header #title img[alt*="Twitter"] {
+  filter: invert(73%) sepia(43%) saturate(312%) hue-rotate(167deg) brightness(95%) contrast(86%);
+}
+ header #title img[alt*="Instagram"] {
+  filter: invert(60%) sepia(17%) saturate(806%) hue-rotate(279deg) brightness(92%) contrast(93%);
+
+  }
+  header #title img[alt*="Shopee"] {
+    filter: invert(80%) sepia(10%) saturate(1233%) hue-rotate(324deg) brightness(92%) contrast(91%);
+    
+  }
+  figcaption,
+    footer,
+    footer a {
+      color: #FFF;
+    }
+    main{
+      background-color: #dbd7f1;
+    }
+
+    footer {
+      background-color: #bab2e0;
+    }
+    .star {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      z-index: 3;
+    }
+    @keyframes twinkle {
+      0% {
+        transform: scale(1, 1);
+        background: rgba(255, 255, 255, 0.0);
+        animation-timing-function: ease-in;
+      }
+
+      60% {
+        transform: scale(0.8, 0.8);
+        background: rgba(255, 255, 255, 1);
+        animation-timing-function: ease-out;
+      }
+
+      80% {
+        background: rgba(255, 255, 255, 0.00);
+        transform: scale(1, 1);
+      }
+
+      100% {
+        background: rgba(255, 255, 255, 0.0);
+        transform: scale(1, 1);
+      }
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0RBSRK7J29"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-0RBSRK7J29');
+  </script>
+</head>
+
+<body>
+  <header>
+    <div id="title" class="animate__animated animate__fadeInRight">
+      <h1 class="animate__animated animate__zoomIn">伊秋<span>Ichu</span></h1>
+      <div class="social">
+        <a href="https://www.facebook.com/janet.tse.30" target="_blank"><img src="/static/facebook.svg"
+            alt="Facebook"></a>
+        <a href="https://twitter.com/Kitsune_ran" target="_blank"><img src="/static/twitter.svg" alt="Twitter"></a>
+        <a href="https://www.instagram.com/kitsune_ran/" target="_blank"><img src="/static/instagram.svg"
+            alt="Instagram"></a>
+        <a href="https://www.pixiv.net/en/users/4703009" target="_blank"><img src="/static/pixiv.svg" alt="Pixiv"></a>
+        <a href="https://shopee.tw/ran4869" target="_blank"><img src="/static/shopee.svg" alt="Shopee"></a>
+      </div>
+      <p class="animate__animated animate__fadeIn">喜歡畫Q版獸的狐狸<br>
+        寶可夢、純獸、迷因 都是我的愛<br>
+        然後快去追蹤鬍子桑他畫超好
+      </p>
+    </div>
+    <div class="t2022 animate__animated animate__fadeIn">Ichu</div>
+    <img class="avatar animate__animated animate__bounceInUp" src=avatar.webp />
+  </header>
+  <main>
+    <div class="container">
+      <figure>
+        <img src="IMG_0818.webp" alt="IMG_0818" />
+      </figure>
+      <figure>
+        <img src="IMG_0819.webp" alt="IMG_0819" />
+      </figure>
+      <figure>
+        <img src="IMG_0820.webp" alt="IMG_0820" />
+      </figure>
+      <figure>
+        <img src="IMG_0821.webp" alt="IMG_0821" />
+      </figure>
+      <figure>
+        <img src="IMG_0822.webp" alt="IMG_0822" />
+      </figure>
+      <figure>
+        <img src="IMG_0823.webp" alt="IMG_0823" />
+      </figure>
+      <figure>
+        <img src="IMG_0824.webp" alt="IMG_0824" />
+      </figure>
+      <figure>
+        <img src="IMG_0825.webp" alt="IMG_0825" />
+      </figure>
+      <figure>
+        <img src="IMG_0826.webp" alt="IMG_0826" />
+      </figure>
+      <a class="twitter-timeline" href="https://twitter.com/Kitsune_ran?ref_src=twsrc%5Etfw">推文載入中</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    </div>
+  </main>
+  <footer>Furry Art in Taiwan © 2023<br>
+    <a href="https://github.com/furryart-tw">Github</a> · <a
+      href="https://www.facebook.com/media/set/?set=a.184623570905984">Facebook</a>
+  </footer>
+<script>
+      for (var caca = 0; caca < 100; caca++) {
+      var star = document.createElement("div");
+      star.className = "star";
+      star.style.animation = "twinkle " + ((Math.random() * 4) + 4) + "s linear " + (Math.random() * 5) + "s infinite";
+      star.style.top = Math.random() * window.innerHeight + "px";
+      star.style.left = Math.random() * window.innerWidth + "px";
+      document.getElementsByTagName('header')[0].appendChild(star);
+    }
+</script>
+</body>
+
+</html>
