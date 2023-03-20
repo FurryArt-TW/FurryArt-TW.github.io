@@ -22,7 +22,8 @@
       color: #cfb1b1;
     }
 
-    footer,footer a {
+    footer,
+    footer a {
       background-color: #3f1515;
       font-weight: 400;
     }
@@ -30,14 +31,18 @@
     h1 {
       max-width: none;
     }
-    main{
+
+    main {
       background-color: #321e1f;
-      color:#cfb1b1;
+      color: #cfb1b1;
       letter-spacing: 0.3rem;
     }
-    figcaption, footer, footer a {
+
+    figcaption,
+    footer,
+    footer a {
       color: #cfb1b1;
-      font-size: 1rem!important;
+      font-size: 1rem !important;
     }
 
     header .avatar {
@@ -48,9 +53,11 @@
       max-height: 100%;
       max-width: none;
     }
-    figure img{
+
+    figure img {
       border-radius: 0;
-      box-shadow:rgba(0, 0, 0, 0.4) 20px 20px 15px; }
+      box-shadow: rgba(0, 0, 0, 0.4) 20px 20px 15px;
+    }
 
     #title {
       background-color: transparent;
@@ -70,14 +77,16 @@
     .social img {
       filter: invert(77%) sepia(14%) saturate(322%) hue-rotate(314deg) brightness(91%) contrast(99%);
     }
+
     @media (max-aspect-ratio: 1) {
       header .avatar {
-        width:90%;
-        max-height:none;
+        width: 90%;
+        max-height: none;
         height: auto;
       }
-      #title{
-        width:90%;
+
+      #title {
+        width: 90%;
         font-size: 80%;
       }
 
@@ -97,7 +106,7 @@
 <body>
   <header>
     <canvas id="game"></canvas>
-    <div id="title" class="animate__animated animate__fadeInRight">
+    <div id="title" class="animate__animated animate__fadeInLeft">
       <h1 class="animate__animated animate__zoomIn">咕嚕</h1>
       <div class="social">
         <a href="https://www.facebook.com/profile.php?id=100075694760636&mibextid=ZbWKwL" target="_blank"><img
@@ -105,7 +114,7 @@
         <a href="https://twitter.com/maynameisguru" target="_blank"><img src="/static/twitter.svg" alt="Twitter"></a>
         <a href="https://www.plurk.com/ellie_05240524" target="_blank"><img src="/static/plunk.svg" alt="plurk"></a>
       </div>
-      <p class="animate__animated animate__fadeIn">早安你好我是咕嚕<br>
+      <p class="animate__animated animate__fadeInUp">早安你好我是咕嚕<br>
         是一位鴿子畫手與快樂畫畫人<br>
         原創/設定/獸/人外/獸裝/很多廢文/手遊/糧<br>
         每天都好餓<br>
@@ -114,7 +123,7 @@
         歡迎來fb找我互動呀✨️
       </p>
     </div>
-    <img class="avatar animate__animated animate__fadeIn" src=avatar.webp />
+    <img class="avatar animate__animated animate__fadeInDown" src=avatar.webp />
   </header>
   <main>
     <div class="container">
