@@ -13,38 +13,48 @@
   <link rel="stylesheet" href="/artist/style.css" type="text/css" media="all" />
   <link rel="stylesheet" href="/animate.min.css">
   <style>
-    body {
-      background-color: #f9efc7;
+    header {
+      background: linear-gradient(#a5d3c6, #67c0c4);
     }
-h1{
-  color:#8a5113;
-}
-header p{
-  color:#6a3d11;
-}
-header #title img[alt*="Facebook"],header #title img[alt*="Pixiv"],header #title img[alt*="Twitter"] {
-  filter: invert(73%) sepia(43%) saturate(312%) hue-rotate(167deg) brightness(95%) contrast(86%);
-}
- header #title img[alt*="Instagram"] {
-  filter: invert(60%) sepia(17%) saturate(806%) hue-rotate(279deg) brightness(92%) contrast(93%);
 
-  }
-  header #title img[alt*="Shopee"] {
-    filter: invert(80%) sepia(10%) saturate(1233%) hue-rotate(324deg) brightness(92%) contrast(91%);
-    
-  }
-  figcaption,
+    h1 {
+      color: #8a5113;
+    }
+
+    header p {
+      color: #6a3d11;
+    }
+
+    header #title img[alt*="Facebook"],
+    header #title img[alt*="Pixiv"],
+    header #title img[alt*="Twitter"] {
+      filter: invert(73%) sepia(43%) saturate(312%) hue-rotate(167deg) brightness(95%) contrast(86%);
+    }
+
+    header #title img[alt*="Instagram"] {
+      filter: invert(60%) sepia(17%) saturate(806%) hue-rotate(279deg) brightness(92%) contrast(93%);
+
+    }
+
+    header #title img[alt*="Shopee"] {
+      filter: invert(80%) sepia(10%) saturate(1233%) hue-rotate(324deg) brightness(92%) contrast(91%);
+
+    }
+
+    figcaption,
     footer,
     footer a {
       color: #FFF;
     }
-    main{
-      background-color: #dbd7f1;
+
+    main {
+      background-color: #67c0c4;
     }
 
     footer {
-      background-color: #bab2e0;
+      background-color: #29969c;
     }
+
     .star {
       position: absolute;
       width: 10px;
@@ -52,6 +62,11 @@ header #title img[alt*="Facebook"],header #title img[alt*="Pixiv"],header #title
       border-radius: 5px;
       z-index: 3;
     }
+
+    .t2022 {
+      color: #ffffff85;
+    }
+
     @keyframes twinkle {
       0% {
         transform: scale(1, 1);
@@ -101,8 +116,7 @@ header #title img[alt*="Facebook"],header #title img[alt*="Pixiv"],header #title
         <a href="https://shopee.tw/ran4869" target="_blank"><img src="/static/shopee.svg" alt="Shopee"></a>
       </div>
       <p class="animate__animated animate__fadeIn">喜歡畫Q版獸的狐狸<br>
-        寶可夢、純獸、迷因 都是我的愛<br>
-        然後快去追蹤鬍子桑他畫超好
+        寶可夢、純獸、迷因 都是我的愛♡
       </p>
     </div>
     <div class="t2022 animate__animated animate__fadeIn">Ichu</div>
@@ -146,8 +160,8 @@ header #title img[alt*="Facebook"],header #title img[alt*="Pixiv"],header #title
     <a href="https://github.com/furryart-tw">Github</a> · <a
       href="https://www.facebook.com/media/set/?set=a.184623570905984">Facebook</a>
   </footer>
-<script>
-      for (var caca = 0; caca < 100; caca++) {
+  <script>
+    for (var caca = 0; caca < 100; caca++) {
       var star = document.createElement("div");
       star.className = "star";
       star.style.animation = "twinkle " + ((Math.random() * 4) + 4) + "s linear " + (Math.random() * 5) + "s infinite";
@@ -155,7 +169,7 @@ header #title img[alt*="Facebook"],header #title img[alt*="Pixiv"],header #title
       star.style.left = Math.random() * window.innerWidth + "px";
       document.getElementsByTagName('header')[0].appendChild(star);
     }
-</script>
+  </script>
 </body>
 
 </html>
