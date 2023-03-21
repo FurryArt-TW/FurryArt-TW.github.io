@@ -62,6 +62,9 @@
       border-radius: 5px;
       z-index: 3;
     }
+    .mainStar {
+      z-index: -1;
+    }
 
     .t2022 {
       color: #ffffff85;
@@ -134,7 +137,7 @@
         <img src="IMG_0820.webp" alt="IMG_0820" />
       </figure>
       <figure>
-        <img src="IMG_0821.webp" alt="IMG_0821" />
+        <img src="未命名的作品.webp" alt="未命名的作品" />
       </figure>
       <figure>
         <img src="IMG_0822.webp" alt="IMG_0822" />
@@ -168,6 +171,19 @@
       star.style.top = Math.random() * window.innerHeight + "px";
       star.style.left = Math.random() * window.innerWidth + "px";
       document.getElementsByTagName('header')[0].appendChild(star);
+    }
+    window.onload = function () {
+      console.log("loaded");
+      var mainSection = document.querySelector('main');
+      var mainSectionHeight = mainSection.offsetHeight;
+      for (var caca = 0; caca < 1000; caca++) {
+        var star = document.createElement("div");
+        star.className = "star mainStar";
+        star.style.animation = "twinkle " + ((Math.random() * 4) + 4) + "s linear " + (Math.random() * 5) + "s infinite";
+        star.style.top = Math.random() * mainSectionHeight + "px";
+        star.style.left = Math.random() * window.innerWidth + "px";
+        document.getElementsByTagName('main')[0].appendChild(star);
+      }
     }
   </script>
 </body>
