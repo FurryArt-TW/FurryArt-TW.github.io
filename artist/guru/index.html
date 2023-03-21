@@ -45,12 +45,14 @@
       font-size: 1rem !important;
     }
 
-    header .avatar {
+    header .avatara {
+      position: absolute;
       right: 0;
-      left: initial;
       top: 0;
       margin: 0;
       max-height: 100%;
+      z-index: 3;
+      transform: translate(-100%,100%);
     }
 
     figure img {
@@ -67,6 +69,7 @@
       top: inherit;
       text-align: center;
       width: calc(100vw - 74svh);
+      z-index: 4;
     }
 
     .social {
@@ -78,8 +81,9 @@
     }
 
     @media (max-aspect-ratio: 1) {
-      header .avatar {
-        width: 90%;
+      header .avatara {
+        max-width: 90%;
+        object-fit: cover;  
         max-height: 50%;
       }
 
@@ -103,7 +107,6 @@
 
 <body>
   <header>
-    <canvas id="game"></canvas>
     <div id="title" class="animate__animated animate__fadeInLeft">
       <h1 class="animate__animated animate__zoomIn">咕嚕</h1>
       <div class="social">
@@ -121,7 +124,7 @@
         歡迎來fb找我互動呀✨️
       </p>
     </div>
-    <img class="avatar animate__animated animate__fadeInDown" src=avatar.webp />
+    <img class="avatara animate__animated animate__fadeInDown" src=avatar.webp />
   </header>
   <main>
     <div class="container">
