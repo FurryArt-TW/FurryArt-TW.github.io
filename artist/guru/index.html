@@ -52,7 +52,7 @@
       margin: 0;
       max-height: 100%;
       z-index: 3;
-      transform: translate(-100%, 100%);
+      transform: translate(-100%,100%);
     }
 
     figure img {
@@ -81,18 +81,24 @@
     }
 
     @media (max-aspect-ratio: 1/1) {
+      header{
+        height:auto;
+      }
       header .avatara {
+        position: static;
         max-width: 90%;
-        object-fit: cover;
+        float: right;
         max-height: 60%;
+        display: block;
       }
 
       #title {
+        margin: 1rem 0;
+        position: static;
         width: 100%;
         font-size: 80%;
-        height: 40%;
         bottom: 0;
-        transform: translateY(50%);
+        clear:both;
       }
 
     }
@@ -110,6 +116,7 @@
 
 <body>
   <header>
+    <img class="avatara animate__animated animate__fadeInDown" src=avatar.webp />
     <div id="title" class="animate__animated animate__fadeInLeft">
       <h1 class="animate__animated animate__zoomIn">咕嚕</h1>
       <div class="social">
@@ -127,7 +134,7 @@
         歡迎來fb找我互動呀✨️
       </p>
     </div>
-    <img class="avatara animate__animated animate__fadeInDown" src=avatar.webp />
+   
   </header>
   <main>
     <div class="container">
