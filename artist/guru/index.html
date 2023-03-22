@@ -80,7 +80,7 @@
       filter: invert(77%) sepia(14%) saturate(322%) hue-rotate(314deg) brightness(91%) contrast(99%);
     }
 
-    @media (max-aspect-ratio: 1/1) {
+    @media (max-aspect-ratio: 1) {
       header .avatara {
         max-width: 90%;
         object-fit: cover;  
@@ -88,8 +88,9 @@
       }
 
       #title {
-        width: 100vw;
+        width: 100%;
         font-size: 80%;
+        transform: translate3d(0,0,0);
       }
 
     }
@@ -107,15 +108,15 @@
 
 <body>
   <header>
-    <div id="title" class="">
-      <h1 class="">咕嚕</h1>
+    <div id="title" class="animate__animated animate__fadeInLeft">
+      <h1 class="animate__animated animate__zoomIn">咕嚕</h1>
       <div class="social">
         <a href="https://www.facebook.com/profile.php?id=100075694760636&mibextid=ZbWKwL" target="_blank"><img
             src="/static/facebook.svg" alt="Facebook"></a>
         <a href="https://twitter.com/maynameisguru" target="_blank"><img src="/static/twitter.svg" alt="Twitter"></a>
         <a href="https://www.plurk.com/ellie_05240524" target="_blank"><img src="/static/plunk.svg" alt="plurk"></a>
       </div>
-      <p class="">早安你好我是咕嚕<br>
+      <p class="animate__animated animate__fadeInUp">早安你好我是咕嚕<br>
         是一位鴿子畫手與快樂畫畫人<br>
         原創/設定/獸/人外/獸裝/很多廢文/手遊/糧<br>
         每天都好餓<br>
@@ -124,7 +125,7 @@
         歡迎來fb找我互動呀✨️
       </p>
     </div>
-    <img class="avatara" src=avatar.webp />
+    <img class="avatara animate__animated animate__fadeInDown" src=avatar.webp />
   </header>
   <main>
     <div class="container">
