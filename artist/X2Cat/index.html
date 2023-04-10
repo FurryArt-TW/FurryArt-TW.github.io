@@ -15,7 +15,7 @@
   <style>
     header {
       background: #000080;
-      background: linear-gradient(30deg, #000080, #000)
+      background: linear-gradient(#18183b, #303075)
     }
 
     main {
@@ -33,8 +33,7 @@
       height: 89px;
       position: absolute;
       bottom: 200px;
-      -webkit-animation: fall .63s linear infinite;
-      -moz-animation: fall .63s linear infinite;
+      animation: fall .5s linear infinite;
 
     }
 
@@ -56,14 +55,7 @@
       z-index: 4;
     }
 
-    /* animate the drops*/
-    @-webkit-keyframes fall {
-      to {
-        margin-top: 900px;
-      }
-    }
-
-    @-moz-keyframes fall {
+    @keyframes fall {
       to {
         margin-top: 900px;
       }
@@ -140,7 +132,7 @@
 
   <script>
     // number of drops created.
-    var nbDrop = 858;
+    var nbDrop = 80;
 
     // function to generate a random number range.
     function randRange(minNum, maxNum) {
@@ -151,8 +143,8 @@
     function createRain() {
 
       for (i = 1; i < nbDrop; i++) {
-        var dropLeft = randRange(0, 1600);
-        var dropTop = randRange(-1000, 1400);
+        var dropLeft = randRange(0, window.innerWidth);
+        var dropTop = randRange(-1000, window.innerHeight);
 
         document.getElementsByClassName('rain')[0].innerHTML += '<div class="drop" id="drop' + i + '"></div>';
         document.getElementById('drop' + i).style.left = dropLeft + 'px';
