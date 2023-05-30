@@ -49,6 +49,7 @@ header .avatar {
    z-index: 3;
    position: absolute;
    transform: translate(0, -50%);
+   -webkit-transform: translate(0, -50%);
    right: 0;
    top: 50%;
    width: 45%;
