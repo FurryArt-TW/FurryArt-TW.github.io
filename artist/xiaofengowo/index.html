@@ -22,7 +22,7 @@
     footer a {}
 
     footer {
-      background-color: #f5bca3;
+      background-color: #0090b1;
     }
 
     .bg {
@@ -69,15 +69,30 @@
       max-width: 100%;
       animation: stretch 1s ease-out 1s forwards;
     }
-    .box{
+
+    .box,
+    .feng {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       gap: 1rem;
+      margin-bottom: 2rem;
     }
-    .box img{
+
+    .feng {
+      justify-content: space-around;
+    }
+
+    .feng img,
+    .box img {
       height: 50vh;
+      border-radius: 1.5rem;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    }
+
+    .feng img {
+      height: 25vh;
     }
 
     @keyframes stretch {
@@ -92,6 +107,19 @@
         left: 0;
         transform: none;
       }
+      
+    .feng img {
+      width: 40vw;
+      height: inherit;
+    }
+    .box img {
+      width: 100%;
+      height: inherit;
+      margin-bottom: 1rem;
+    }
+    .bg{
+      background-size: cover;
+    }
     }
   </style>
   <!-- Google tag (gtag.js) -->
@@ -131,20 +159,26 @@
   </header>
   <main>
     <div class="container">
-
-     <div class="box">
-      <img src="0216-1(改).webp" alt="0216-1(改)" />
-      <img src="2023-01-09.webp" alt="2023-01-09" />
-      <img src="芊芊菟2_edited.webp" alt="芊芊菟2_edited" />
-      <img src="PSX_20221024_120619.webp" alt="PSX_20221024_120619" />
-      <img src="PSX_20221027_204845.webp" alt="PSX_20221027_204845" />
-      <img src="PSX_20221119_205150.webp" alt="PSX_20221119_205150" />
-      <img src="PSX_20221213_211822.webp" alt="PSX_20221213_211822" />
-      <img src="PSX_20230110_072934.webp" alt="PSX_20230110_072934" />
-      <img src="PSX_20230117_204517.webp" alt="PSX_20230117_204517" />
-      <img src="SFW字.webp" alt="SFW字" />
-      <img src="WOLF_SAFE.webp" alt="WOLF_SAFE" />
-     </div>
+      <div class="feng">
+        <img src="猦/11.webp" alt="小猦" />
+        <img src="猦/頭圖 (2).webp" alt="小猦" />
+        <img src="猦/頭圖.webp" alt="小猦" />
+        <img src="猦/IMG_0301.webp" alt="小猦" />
+        <img src="猦/IMG_0307.webp" alt="小猦" />
+      </div>
+      <div class="box">
+        <img src="0216-1(改).webp" alt="0216-1(改)" />
+        <img src="2023-01-09.webp" alt="2023-01-09" />
+        <img src="芊芊菟2_edited.webp" alt="芊芊菟2_edited" />
+        <img src="PSX_20221024_120619.webp" alt="PSX_20221024_120619" />
+        <img src="PSX_20221027_204845.webp" alt="PSX_20221027_204845" />
+        <img src="PSX_20221119_205150.webp" alt="PSX_20221119_205150" />
+        <img src="PSX_20221213_211822.webp" alt="PSX_20221213_211822" />
+        <img src="PSX_20230110_072934.webp" alt="PSX_20230110_072934" />
+        <img src="PSX_20230117_204517.webp" alt="PSX_20230117_204517" />
+        <img src="SFW字.webp" alt="SFW字" />
+        <img src="WOLF_SAFE.webp" alt="WOLF_SAFE" />
+      </div>
       <a class="twitter-timeline" href="https://twitter.com/xiaofengowo?ref_src=twsrc%5Etfw">推文載入中</a>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
